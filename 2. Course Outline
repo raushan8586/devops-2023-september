@@ -2,7 +2,7 @@
 2. GIT / GITHUB --> Version Control System, SCM (online repository)
 3. MicroServices Vs Monolithic
 4. Containers, Container Engine, Docker
-5. Kubernetes --> Container Orchestrtion Engine, EKS --> Elastic Kubernetes Service
+5. Kubernetes --> Container Orchestrtion Engine, EKS --> Elastic Kubernetes Service, helm chart
 6. Jenkins, CI/CD Pieline, Maven, Jenkinsfile
 7. Monitoring --> Prometheus/Grafana, ELK (Elasticsearch, Logstash, Kibana)
 8. Terraform  --> Infrastructure as Code, Automation
