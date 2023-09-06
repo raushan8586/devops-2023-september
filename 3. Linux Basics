@@ -1,0 +1,15 @@
+date
+time
+uptime
+cd --> change directory
+/ --> root
+ls --> list all the files/directories
+ls -lrt --> list all the files/directories by time
+mkdir --> crete a directory
+touch --> create a file
+vi --> i --> edit the file --> esc (exit insert mode) --> :wq!
+clear --> clear the screen
+cat --> read a file
+rmdir
+rm
+chmod --> permissions
