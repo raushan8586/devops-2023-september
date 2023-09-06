@@ -1,0 +1,18 @@
+SDLC --> Software Development Lifecycle
+
+makemytrip --> Deep Kalra
+
+1. Problem statement
+2. Requirements Gathering
+3. Planning & Designing
+4. Coding
+5. Build the code --> compile, package --> .jar/.war/.ear (artifacts)
+6. Deploy the artifacts to QA/Staging
+7. Testing/Validations --> Functional Testing / Performance Testing / Security Testing
+8. Deploy to Production
+9. Monitoring
+10. Feedback / Maintenance
+
+SDLC Models
+------------
+1. Waterfall
