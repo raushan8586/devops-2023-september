@@ -1,0 +1,31 @@
+1  git --version
+    2  ls -l
+    3  mkdir project1
+    4  cd project1/
+    5  ls -l
+    6  ls -la
+    7  git status
+    8  git init
+    9  ls -la
+   10  touch file1.java
+   11  vi file1.java 
+   12  ls -l
+   13  ls -la
+   14  git ls-files
+   15  git status
+   16  git add file1.java 
+   17  git status
+   18  git log
+   19  git ls-files
+   20  git commit -m "1st commit"
+   21  git config --global user.email "raushan8586.kumar@gmail.com"
+   22  git config --global user.name "Raushan Kumar"
+   23  git commit -m "1st commit"
+   24  git log
+   25  git log --one-line
+   26  git log --oneline
+   27  git status
+   28  ls -l
+   29  git ls-files
+   30  git status
+   31  history

@@ -5,6 +5,6 @@
 5. Kubernetes --> Container Orchestrtion Engine, EKS --> Elastic Kubernetes Service, helm chart
 6. Jenkins, CI/CD Pieline, Maven, Jenkinsfile
 7. Monitoring --> Prometheus/Grafana, ELK (Elasticsearch, Logstash, Kibana)
-8. Terraform  --> Infrastructure as Code, Automation
+8. Terraform  --> Infrastructure as Code, Automation --> Infrastucture Proviosioning
 9. Ansible --> Configuration managemnt Tool
 10. Interview Questions
