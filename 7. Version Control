@@ -18,4 +18,10 @@ Types of VCS
 2. Distributed VCS --> Git
     Local Repo
 
+=============================================================================================
+ls -la --> list the hideen files/folder --> To check whether the folder is being tracked by git or not
+ls -l --> WD
+git ls-files --> SA/LR 
+git status --> To confirm SA or LR
+
 
