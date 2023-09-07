@@ -1,0 +1,14 @@
+Version control
+
+doc1.docx
+
+Git --> Version control system
+GitHUb --> Source Code Management / Online Code Repo --> Remote Repo
+
+Types of VCS
+1. Centralized VCS --> svn (sub-version)
+2. Distributed VCS --> Git
+
+Why VCS?
+1. To track chnages --> who commited the changes? what was changed? --> commit ID
+2. To retrieve files from accidental deletes
