@@ -67,3 +67,42 @@
    32  git remote add origin1 https://github.com/raushan8586/september-2023-repo2.git
    33  git remote -v
    34  history
+
+---------------------------------------------------------------------------------
+
+git branch
+   46  git log --oneline
+   47  git branch b1 master
+   48  git branch
+   49  git checkout b1
+   50  git branch
+   51  git log --oneline
+   52  vi b1_code1
+   53  ls -l
+   54  git status
+   55  git add .
+   56  git status
+   57  git commit -m "b1_1st-commit"
+   58  git log --oneline
+   59  git push origin b1
+   60  cd ..
+   61  ls -l
+   62  git clone https://github.com/raushan8586/september-2023-repo.git
+   63  ls -l
+   64  cd september-2023-repo/
+   65  ls -l
+   66  ls -la
+   67  git branch
+   68  git checkout b1
+   69  git branch
+   70  ls -l
+   71  cd ../project1/
+   72  git branch
+   73  git log --oneline
+   74  git checkout master
+   75  git merge b1 master
+   76  git log --oneline
+   77  git log
+   78  git log --oneline
+   79  git pull origin master
+   80  history
