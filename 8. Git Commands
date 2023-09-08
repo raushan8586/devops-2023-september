@@ -29,3 +29,41 @@
    29  git ls-files
    30  git status
    31  history
+
+
+----------------------------------------------
+
+1  ls -l
+    2  cd project1/
+    3  ls -l
+    4  git status
+    5  ls -l
+    6  git ls-files
+    7  git status
+    8  clear
+    9  touch file2.java
+   10  vi file2.java 
+   11  git status
+   12  ls -l
+   13  git add file2.java 
+   14  git ls-files
+   15  git status
+   16  git log --oneline
+   17  git commit -m "2nd commit"
+   18  git config --list
+   19  git log --oneline
+   20  git status
+   21  git show 48ac98f
+   22  git remote -v
+   23  git remote add origin https://github.com/raushan8586/september-2023-repo.git
+   24  git remote -v
+   25  git branch
+   26  git push origin master
+   27  git fetch
+   28  git ls-files
+   29  git pull
+   30  git pull origin master
+   31  git ls-files
+   32  git remote add origin1 https://github.com/raushan8586/september-2023-repo2.git
+   33  git remote -v
+   34  history
