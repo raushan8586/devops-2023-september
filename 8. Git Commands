@@ -154,3 +154,42 @@ git branch
    43  git restore file3.java
    44  ls -l
    45  git status
+
+------------------------------------------------------------------
+
+git log --oneline
+   49  ls -l
+   50  vi app.log
+   51  vi ReadMe
+   52  vi my-notes
+   53  git status
+   54  vi file4.java
+   55  git status
+   56  git add file4.java 
+   57  git status
+   58  git commit -m "5th commit"
+   59  git status
+   60  vi .gitignore
+   61  git status
+   62  git add .
+   63  git commit -m ".gitIgnoreAdded"
+   64  git status
+   65  vi my-notes 
+   66  git status
+   67  git log --oneline
+   68  ls -l
+   69  vi file5.java
+   70  git add .
+   71  git commit -m "6th commit"
+   72  git log --oneline
+   73  git show 564730e
+   74  git revert 564730e
+   75  git log --oneline
+   76  ls -l
+   77  git show 7491b88
+   78  clear
+   79  git log --oneline
+   80  ls -l
+   81  git reset --hard 87eea67
+   82  git log --oneline
+   83  git status
