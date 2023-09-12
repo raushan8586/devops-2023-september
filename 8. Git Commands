@@ -106,3 +106,51 @@ git branch
    78  git log --oneline
    79  git pull origin master
    80  history
+
+-------------------------------------------------------------------------------
+
+1  ls -l
+    2  cd project1/
+    3  ls -
+    4  ls -l
+    5  git log --oneline
+    6  git branch
+    7  git checkout -b b2 master
+    8  git branch
+    9  git checkout master
+   10  git log --oneline
+   11  git show 3dbea42
+   12  ls -l
+   13  vi file3.java
+   14  git status
+   15  ls -la
+   16  git add .
+   17  git status
+   18  git commit -m "3rd commit"
+   19  git status
+   20  vi file3.java 
+   21  git status
+   22  git diff file3.java 
+   23  git add file3.java 
+   24  git diff file3.java 
+   25  git diff --staged file3.java 
+   26  ls -l
+   27  git commit -m "4th commit"
+   28  ls -l
+   29  rm file3.java
+   30  ls -l
+   31  git status
+   32  git restore file3.java
+   33  ls -l
+   34  git status
+   35  git rm file3.java 
+   36  ls -l
+   37  git ls-files
+   38  git status
+   39  git restore --staged file3.java
+   40  git status
+   41  ls -l
+   42  git ls-files
+   43  git restore file3.java
+   44  ls -l
+   45  git status
