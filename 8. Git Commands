@@ -200,3 +200,53 @@ git rebase master
 
 merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
 
+To avoid parallel development, perform rebase before merge. We should try to perform linear development
+
+ 1  git log
+    2  cd project1/
+    3  got log
+    4  git log
+    5  git config --list
+    6  ls -l
+    7  git status
+    8  ls -la
+    9  cat .gitignore 
+   10  git branch
+   11  git log --onelie
+   12  git log --oneline
+   13  git checkout b1
+   14  git rebase master
+   15  git log --oneline
+   16  git checkout b2
+   17  git branch
+   18  git rebase master
+   19  git log --oneline
+   20  git push origin master
+   21  git log --oneline
+   22  git push origin b1
+   23  git log --oneline
+   24  git push origin b2
+   25  git remote -v
+   26  git log --graph --pretty=oneline
+   27  git branch
+   28  git checkout master
+   29  git log --graph --pretty=oneline
+   30  git branch
+   31  git log --graph --pretty=oneline
+   32  ls -l
+   33  vi file5.java
+   34  git add .
+   35  git commit -m "6th commit"
+   36  git checkout b1
+   37  vi b1_code2
+   38  git add .
+   39  git commit -m "b1_2nd-commit"
+   40  git checkout master
+   41  git merge b1 master
+   42  git log --graph --pretty=oneline
+   43  git checkout b1
+   44  git log --graph --pretty=oneline
+   45  git rebase master
+   46  git log --graph --pretty=oneline
+
+
