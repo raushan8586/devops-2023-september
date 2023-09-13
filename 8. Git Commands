@@ -250,3 +250,27 @@ To avoid parallel development, perform rebase before merge. We should try to per
    46  git log --graph --pretty=oneline
 
 
+Conflict Scenario:
+48  git checkout master
+   49  vi test.java
+   50  git add .
+   51  git commit -m "test-file-added-master"
+   52  git log --graph --pretty=oneline
+   53  git checkout b1
+   54  vi test.java
+   55  git add .
+   56  git commit -m "test-file-added-b1"
+   57  git checkout master
+   58  git merge b1 master
+   59  ls -l
+   60  cat test.java
+   61  vi test.java
+   62  git status
+   63  git add .
+   64  git status
+   65  git commit -m "test.java-file-updated-conflict-fix"
+   66  git status
+   67  git log --graph --pretty=oneline
+   68  history
+
+
