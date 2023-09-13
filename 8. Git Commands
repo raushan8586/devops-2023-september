@@ -99,8 +99,8 @@ git branch
    71  cd ../project1/
    72  git branch
    73  git log --oneline
-   74  git checkout master
-   75  git merge b1 master
+   74  git checkout master --> Go to the destination branch
+   75  git merge b1 master --> feature branch (b1) has more commits than Master --> git merge src destination
    76  git log --oneline
    77  git log
    78  git log --oneline
@@ -193,3 +193,10 @@ git log --oneline
    81  git reset --hard 87eea67
    82  git log --oneline
    83  git status
+
+Rebase --> When the feature branch needs to get updated (get all the commits) from Master
+Go to the feature branch (b1)
+git rebase master
+
+merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
+
