@@ -250,7 +250,8 @@ To avoid parallel development, perform rebase before merge. We should try to per
    46  git log --graph --pretty=oneline
 
 
-Conflict Scenario:
+Conflict Scenario: --> Parallel Development + File Name same --> Needs to be resolved manually
+
 48  git checkout master
    49  vi test.java
    50  git add .
