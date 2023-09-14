@@ -274,4 +274,37 @@ Conflict Scenario: --> Parallel Development + File Name same --> Needs to be res
    67  git log --graph --pretty=oneline
    68  history
 
+--------------------------------------------------------------------------------------------------------
+1  cd  project1/
+    2  ls -l
+    3  vi file4.java 
+    4  vi file5.java 
+    5  git branch
+    6  git status
+    7  git stash list --> list all the stash IDs
+    8  git stash  --> move unstaged changes to the temp shell
+    9  git stash list
+   10  git log --oneline
+   11  git show stash@{0} --> describe the stash id
+   12  git status
+   13  git stash pop stash@{0} --> unstash and delete the stash id from the tem shell. ("apply" --> does not delete form the tem shell)
+   14  git status
+   15  git stash list
+   16  git stash -p --> used for partial stashing
+   17  git stash list
+   18  git show stash@{0}
+   19  git status
+   20  git stash drop stash@{0} --> delete the stash id
+   21  git stash list
+   22  git stash
+   23  git stash list
+   24  git stash drop stash@{0}
+   25  vi file4.java 
+   26  git stash
+   27  vi file5.java 
+   28  git stash
+   29  git stash list
+   30  git stash clear
+   31  git stash list
+
 
