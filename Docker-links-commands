@@ -1,0 +1,10 @@
+Installation:
+sudo su -
+      1  apt update -y
+    2  clear
+    3  apt install docker.io -y
+    4  docker version
+    5  docker info
+
+  Images:
+https://hub.docker.com/
