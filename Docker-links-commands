@@ -8,3 +8,6 @@ sudo su -
 
   Images:
 https://hub.docker.com/
+
+
+--> Start with docker run next
