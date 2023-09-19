@@ -8,6 +8,29 @@ sudo su -
 
   Images:
 https://hub.docker.com/
+https://docs.docker.com/
+
+docker run:
+https://docs.docker.com/engine/reference/run/
 
 
---> Start with docker run next
+1  apt update -y
+    2  apt install docker.io -y
+    3  docker images
+    4  docker pull httpd
+    5  docker images
+    6  apt install apache2 -y
+    7  systemctl status apache2
+    8  lsof -i -P -n | grep LISTEN
+    9  docker images
+   10  docker inspect httpd
+   11  docker run -itd -p 82:80 httpd
+   12  docker ps
+   13  docker container ls
+   14  lsof -i -P -n | grep LISTEN
+   15  docker ps
+   16  docker exec -it 04473fe77015 /bin/bash
+   17  docker images
+   18  docker ps
+   19  docker commit 04473fe77015 httpd_new
+   20  docker images
