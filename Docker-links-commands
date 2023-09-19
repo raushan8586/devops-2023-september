@@ -34,3 +34,19 @@ https://docs.docker.com/engine/reference/run/
    18  docker ps
    19  docker commit 04473fe77015 httpd_new
    20  docker images
+
+22  docker pull fedora
+   23  docker images
+   24  docker run -itd fedora
+   25  docker ps
+   26  docker rename 3f48ad86c7ef My_Fedora
+   27  docker ps
+   28  docker exec -it 3f48ad86c7ef /bin/bash
+   29  docker stats
+   30  docker container ls
+   31  docker logs 04473fe77015
+   32  dcoker images
+   33  docker images
+   34  mkdir project1
+   35  cd project1/
+   36  touch Dockerfile
