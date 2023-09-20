@@ -50,3 +50,32 @@ https://docs.docker.com/engine/reference/run/
    34  mkdir project1
    35  cd project1/
    36  touch Dockerfile
+
+
+-------------------------------
+
+docker volume ls
+   49  docker volume create intellipaat-volume
+   50  docker volume ls
+   51  docker ps
+   52  docker exec -it 96fa8d4ab869 /bin/bash
+   53  docker ps
+   54  docker rm -f 96f
+   55  docker ps
+   58  docker volume ls
+   59  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 82:80 httpd_new
+   60  docker ps
+   61  docker exec -it 721759978adc /bin/bash
+   62  find / -name intellipaat-volume
+   63  cd /var/lib/docker/volumes/intellipaat-volume
+   64  ls -l
+   65  cd _data/
+   66  ls -l
+   67  cat index.html
+   68  docker exec -it 721759978adc /bin/bash
+   69  ls -l
+   70  cat index2.html
+   71  docker ps
+   72  docker rm -f 721
+   73  docker ps
+   74  ls -l
