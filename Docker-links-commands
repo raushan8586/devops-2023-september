@@ -13,6 +13,8 @@ https://docs.docker.com/
 docker run:
 https://docs.docker.com/engine/reference/run/
 
+Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+
 
 1  apt update -y
     2  apt install docker.io -y
