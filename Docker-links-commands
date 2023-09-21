@@ -15,6 +15,8 @@ https://docs.docker.com/engine/reference/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 
+Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+
 
 1  apt update -y
     2  apt install docker.io -y
@@ -158,4 +160,29 @@ docker volume ls
   146  docker inspect 828cdf681f67
   147  docker network ls
   148  docker inspect 469f7f7557be
+
+
+
+ 150  doccker-compose version
+  151  docker-compose version
+  152  apt install docker-compose -y
+  153  docker-compose version
+  154  ls -l
+  155  mkdir project3
+  156  cd project3
+  157  docker ps
+  158  docker rm -f 828
+  159  docker ps
+  160  ls -l
+  161  vi docker-compose.yml
+  162  cat docker-compose.yml
+  163  docker-compose up -d
+  164  lsof -i -P -n | grep LISTEN
+  165  vi docker-compose.yml
+  166  docker ps
+  167  docker-compose down
+  168  docker-compose up -d
+  169  docker ps
+  170  docker volume ls
+  171  docker network ls
 
