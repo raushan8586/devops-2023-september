@@ -81,3 +81,32 @@ docker volume ls
    72  docker rm -f 721
    73  docker ps
    74  ls -l
+
+-------------------------------------------------------
+ 76  ls -l
+   77  cd /
+   78  ls -l
+   79  cd /root
+   80  ls -l
+   81  cd project1/
+   82  ls -l
+   83  rm Dockerfile
+   84  ls -l
+   85  clear
+   86  ls -l
+   87  touch Dockerfile
+   88  vi Dockerfile
+   89  docker images
+   90  vi Dockerfile
+   91  ls -l
+   92  vi index1.html
+   93  vi index2.html
+   94  ls -l
+   95  docker ps
+   96  cat Dockerfile
+   97  docker build . -t httpd1
+   98  docker images
+   99  docker run -itd -p 82:80 httpd1
+  100  cd project1/
+  101  ls -l
+
