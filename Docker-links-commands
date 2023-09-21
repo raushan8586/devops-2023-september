@@ -110,3 +110,52 @@ docker volume ls
   100  cd project1/
   101  ls -l
 
+
+
+103  cd ..
+  104  mkdir project2
+  105  cd project2
+  106  touch Dockerfile
+  107  vi Dockerfile
+  108  vi index1.html
+  109  ls -l
+  110  cat Dockerfile
+  111  docker build . -t ubuntu1
+  112  docker images
+  113  docker run -itd -p 82:80 ubuntu1
+  114  docker ps
+  115  docker inspect ubuntu1
+  116  docker ps
+  117  docker inspect 828cdf681f67
+  118  cat Dockerfile
+  119  cd ../project1
+  120  cay Dockerfile
+  121  cat Dockerfile '
+  122  cat Dockerfile
+  123  docker images
+  124  find / -name ubuntu1
+  125  ls -l
+  126  cd /var/lib/docker/
+  127  ls -l
+  128  cd image/
+  129  ls -l
+  130  cd overlay2/
+  131  ls -l
+  132  cd imagedb/
+  133  ls -l
+  134  cd content/
+  135  ls -l
+  136  clear
+  137  cd ~
+  138  ls -l
+  139  docker ps
+  140  docker inspect 828cdf681f67
+  141  docker network ls
+  142  docker inspect 469f7f7557be
+  143  docker inspect 828cdf681f67
+  144  docker inspect 469f7f7557be
+  145  docker ps
+  146  docker inspect 828cdf681f67
+  147  docker network ls
+  148  docker inspect 469f7f7557be
+
