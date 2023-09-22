@@ -188,3 +188,18 @@ docker volume ls
   170  docker volume ls
   171  docker network ls
 
+
+
+  182  docker-compose up -d
+  183  docker ps
+  184  cat docker-compose.yml
+  185  docker ps
+  186  docker exec -it 824329e8f770 /bin/bash
+  187  docker ps
+  188  docker exec -it 4b63a2f753ed /bin/bash --> mysql -u wordpress -p wordpress (connect to mysql db client/instance using this)
+  189  docker ps
+  190  docker images
+  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1
+  192  docker login
+  193  docker image push raushan8586/devops-september-2023:httpd1
+
