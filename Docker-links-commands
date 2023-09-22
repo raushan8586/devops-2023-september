@@ -17,6 +17,8 @@ Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 
 Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
 
+MySQL --> https://www.w3schools.com/MySQL/default.asp
+
 
 1  apt update -y
     2  apt install docker.io -y
