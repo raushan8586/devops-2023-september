@@ -14,3 +14,50 @@ kube-node-lease   Active   14m
 kube-public       Active   14m
 kube-system       Active   14m
 
+
+
+Commands
+[cloudshell-user@ip-10-2-79-68 ~]$ history
+    2  aws --version
+    4  kubectl version
+    5  kubectl version --short
+    6  eksctl version
+    7  clear
+
+
+    8  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+    9  ARCH=amd64
+   10  PLATFORM=$(uname -s)_$ARCH
+   11  curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+   12  # (Optional) Verify checksum
+   13  curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+   14  tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+   15  sudo mv /tmp/eksctl /usr/local/bin
+
+
+   16  eksctl version
+   17  clear
+   18  eksctl create cluster eksdemo1
+   19  kubectl get nodes
+   20  kubectl get pods
+   21  kubectl get namespace
+   22  kubectl get ns
+   23  kubectl get pods -n kube-node-lease
+   24  kubectl get po -n kube-node-lease
+   25  kubectl get po -n kube-public
+   26  kubectl get all -n kube-public
+   27  kubectl get all -n kube-node-lease
+   28  kubectl get all -n kube-system
+   29  kubectl get nodes
+   30  clear
+   31  ls -l
+   32  cat deployment.yaml 
+   33  kubectl get all
+   34  kubectl get all -n default
+   35  ls -l
+   36  kubectl apply -f deployment.yaml 
+   37  kubectl get all
+   38  kubectl get po -o wide
+   39  kubectl get nodes -o wide
+   40  history
+
