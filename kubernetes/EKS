@@ -7,3 +7,10 @@
 
 AWS Documentation --> https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
 
+Namespaces --> Logical grouping of resources
+
+default           Active   14m
+kube-node-lease   Active   14m
+kube-public       Active   14m
+kube-system       Active   14m
+
