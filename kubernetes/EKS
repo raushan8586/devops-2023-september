@@ -61,3 +61,17 @@ Commands
    39  kubectl get nodes -o wide
    40  history
 
+42  kubectl scale deployment nginx-deploy --replicas=4
+   43  kubectl get po -o wide
+   44  kubectl describe po nginx-deploy-665fc99f75-6qdjx
+   45  kubectl get all
+   46  kubectl logs pod nginx-deploy-665fc99f75-n7vkv
+   47* 
+   48  kubectl delete pod nginx-deploy-665fc99f75-6qdjx
+   49  kubectl get po
+   50  kubectl get rs
+   51  kubectl scale deployment nginx-deploy --replicas=3
+   52  kubectl delete -f deployment.yaml 
+   53  kubectl get all
+   54  eksctl delete cluster eksdemo1
+
