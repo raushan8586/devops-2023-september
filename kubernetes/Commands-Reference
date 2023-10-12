@@ -1,8 +1,8 @@
-eksctl create cluster --name=eksdemo1 --without-nodegroup
+eksctl create cluster --name=eksdemo2 --without-nodegroup
 
-eksctl utils associate-iam-oidc-provider --region eu-central-1 --cluster eksdemo1 --approve
+eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo2 --approve
 
-eksctl create nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1 --node-type=t2.micro --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=eks-demo --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
+eksctl create nodegroup --cluster=eksdemo2 --name=eksdemo2-ng --node-type=m5.large --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=eks-demo --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
 
 # If you wish to provision default node-type, just skip this tag --node-type=t2.micro
 
