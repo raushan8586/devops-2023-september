@@ -1,0 +1,43 @@
+eksctl create cluster --name=eksdemo1 --without-nodegroup
+
+eksctl utils associate-iam-oidc-provider --region eu-central-1 --cluster eksdemo1 --approve
+
+eksctl create nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1 --node-type=t2.micro --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=eks-demo --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
+
+# If you wish to provision default node-type, just skip this tag --node-type=t2.micro
+
+eksctl get cluster
+
+eksctl get nodegroup --cluster=eksdemo1
+
+eksctl delete nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1
+
+eksctl delete cluster eksdemo1
+
+kubectl create -f nodeport-service.yaml
+
+kubectl get all
+
+kubectl get nodes
+
+kubectl get nodes -o wide
+
+kubectl get pods -o wide
+
+Login to one of the Nodes and execute - curl 192.168.22.225:32000
+
+kubectl create -f loadbalancer-service.yaml
+
+kubectl get svc
+
+kubectl get po -o wide
+
+kubectl get po
+
+kubectl delete -f nodeport-service.yaml
+
+kubectl delete -f loadbalancer-service.yaml
+
+kubectl get hpa
+
+kubectl get rs
