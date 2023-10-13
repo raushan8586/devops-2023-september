@@ -1,0 +1,19 @@
+10  eksctl create cluster --name=eksdemo2 --without-nodegroup
+   11  eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo2 --approve
+   12  eksctl create nodegroup --cluster=eksdemo2 --name=eksdemo2-ng --node-type=m5.large --nodes=2 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=my-first-key-pair --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
+   13  eksctl version
+   14  kubectl get all
+   15  kubectl get nodes
+   16  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+   17  kubectl get ns
+   18  kubectl get all
+   19  kubectl get all -n default
+   20  kubectl get all -n ingress-nginx
+   21  kubectl get ingressClass
+   22  ls -l
+   23  cat app1.yaml
+   24  kubectl apply -f app1.yaml 
+   25  ls -l
+   26  cat ingress.yaml 
+   27  kubectl apply -f ingress.yaml 
+   28  kubectl get all -n ingress-nginx
