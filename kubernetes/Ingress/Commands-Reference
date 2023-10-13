@@ -17,3 +17,12 @@
    26  cat ingress.yaml 
    27  kubectl apply -f ingress.yaml 
    28  kubectl get all -n ingress-nginx
+
+30  kubectl get nodes -o wide
+   31  kubectl delete -f ingress.yaml 
+   32  kubectl delete -f app1.yaml 
+   33  kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+   34  eksctl get nodegroup --cluster=eksdemo2
+   35  eksctl delete nodegroup --cluster=eksdemo2 --name=eksdemo2-ng
+
+eksctl delete cluster eksdemo2
