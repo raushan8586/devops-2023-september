@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-demo
+      release: canary
+  template:
+    metadata:
+      name: my-nginx
+      labels:
+        app: nginx-demo
+        release: canary
+    spec:
+      containers:
+      - name: my-nginx
+        image: nginx
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+  namespace: default
+spec:
+  selector:
+    app: nginx-demo
+    release: canary
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
