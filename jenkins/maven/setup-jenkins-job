@@ -46,3 +46,18 @@ Install maven 3.6.x
    58  cd target/
    59  ls -l
    60  history
+
+
+mvn -version
+Manage Jenkins --> Tools
+
+Maven plugin needs to be installed
+
+https://github.com/jenkins-docs/simple-java-maven-app.git
+https://github.com/raushan8586/MyLab.git --> does not have full-fledged code
+
+Create a maven project
+
+Goals
+build package
+clean package
