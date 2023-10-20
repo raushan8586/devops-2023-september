@@ -1,2 +1,11 @@
 https://www.jenkins.io/doc/book/pipeline/
 https://www.jenkins.io/doc/book/pipeline/syntax/
+https://www.jenkins.io/doc/book/pipeline/docker/
+
+More Jenkinsfile
+-----------------
+https://github.com/eldada/jenkins-pipeline-kubernetes
+https://github.com/hakdogan/jenkins-pipeline/blob/master/Jenkinsfile
+https://gist.github.com/gazoakley/87dcc16d28fd05acda4ba0a4be5ac387
+https://github.com/jenkins-docs/simple-java-maven-app/blob/master/jenkins/Jenkinsfile
+
