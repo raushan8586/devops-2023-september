@@ -47,3 +47,13 @@ Installation:
    36  ansible host2 -m ping
    37  ansible dev -m ping
    38  history
+
+
+Run a playbook --> 
+vi first-playbook.yaml
+   41  ls -l
+   42  ansible-playbook first-playbook.yaml
+   43  clear
+   44  ansible-playbook first-playbook.yaml
+   45  history
+
