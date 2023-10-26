@@ -1,0 +1,49 @@
+Links:
+Modules: https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
+
+
+
+
+
+Installation:
+1  apt update -y
+    2  python3 --version
+    3  sudo apt install software-properties-common
+    4  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    5  apt install ansible -y
+    6  ansible --version
+
+
+    ssh keyless connectivity
+    7  history
+    8  cd /etc/ansible/
+    9  ls -l
+   10  cat hosts
+   11  vi hosts
+   12  cat hosts
+   13  ansible host1 -m ping    --> Adhoc Commands
+   14  ansible host2 -m ping
+   15  ansible dev -m ping
+   16  cd ~
+   17  pwd
+   18  ls -la
+   19  cd .ssh
+   20  ls -l
+   21  cat authorized_keys
+   22  cd ..
+   23  ls -l
+   24  cd~
+   25  cd ~
+   26  ls -l
+   27  cd .ssh]
+   28  cd .ssh
+   29  clear
+   30  ls -l
+   31  ssh-keygen
+   32  ls -l
+   33  cat id_rsa.pub
+   34  cd /etc/ansible/
+   35  ansible host1 -m ping
+   36  ansible host2 -m ping
+   37  ansible dev -m ping
+   38  history
