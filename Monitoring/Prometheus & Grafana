@@ -7,11 +7,15 @@ Exporters
 https://prometheus.io/docs/instrumenting/exporters/
 
 Installation:
-Binaries: https://prometheus.io/download/
+Binaries: 
+https://prometheus.io/download/
+
+Install Prometheus
+https://www.cherryservers.com/blog/install-prometheus-ubuntu
 
 
-
-
+Node Exporter
+https://prometheus.io/docs/guides/node-exporter/
 
 
 
