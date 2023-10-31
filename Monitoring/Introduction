@@ -1,0 +1,14 @@
+Continuous Monitoring --> why?
+
+1. Health Check
+2. Performance
+
+Roles of a DevOps Engineer (Continuous Monitoring):
+1. Perform POC on the monitoring tools
+2. setup/install the monitoring tool
+3. Creating Dashboards for metrics --> CPU, Memory Disk, Response time, status code, uptime
+4. Alerting
+
+Monitoring tools:
+1. Prometheus & Grafana
+2. ELK (Elasticsearch, Logstash, Kibana)
