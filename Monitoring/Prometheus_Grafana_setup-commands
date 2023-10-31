@@ -35,3 +35,27 @@ root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
    32  sudo systemctl status prometheus
    33  lsof -i -P -n | grep LISTEN
    34  sudo ufw allow 9090/tcp
+
+
+Node-Exporter:
+40  cd ..
+   41  ls -l
+   42  wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+   43  ls -l
+   44  tar xvzf node_exporter-1.6.1.linux-amd64.tar.gz
+   45  ls -l
+   46  cd node_exporter-1.6.1.linux-amd64/
+   47  ls -l
+   48  nohup ./node_exporter &
+   49  lsof -i -P -n | grep LISTEN
+   50  cd /etc/prometheus/
+   51  ls -l
+   52  vi prometheus.yml
+   53  cat prometheus.yml
+   54  vi prometheus.yml
+   55  sudo systemctl daemon-reload
+   56  sudo systemctl restart prometheus
+   57  sudo systemctl status prometheus
+   58  history
+
+
