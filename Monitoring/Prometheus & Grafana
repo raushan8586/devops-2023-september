@@ -1,0 +1,19 @@
+Prometheus:
+--> time-series DB
+
+https://prometheus.io/docs/introduction/overview/
+
+Exporters
+https://prometheus.io/docs/instrumenting/exporters/
+
+Installation:
+Binaries: https://prometheus.io/download/
+
+
+
+
+
+
+
+
+Grafana
