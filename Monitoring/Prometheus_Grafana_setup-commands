@@ -1,0 +1,37 @@
+Prometheus:
+
+root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
+    1  apt update -y
+    2  clear
+    3  sudo groupadd --system prometheus
+    4  sudo useradd -s /sbin/nologin --system -g prometheus prometheus
+    5  sudo mkdir /etc/prometheus
+    6  sudo mkdir /var/lib/prometheus
+    7  wget https://github.com/prometheus/prometheus/releases/download/v2.45.1/prometheus-2.45.1.linux-amd64.tar.gz
+    8  ls -l
+    9  tar xvf prometheus-2.45.1.linux-amd64.tar.gz
+   10  ls -l
+   11  cd prometheus-2.45.1.linux-amd64/
+   12  ls -l
+   13  sudo mv prometheus /usr/local/bin
+   14  ls -l
+   15  sudo mv promtool /usr/local/bin
+   16  sudo chown prometheus:prometheus /usr/local/bin/prometheus
+   17  sudo chown prometheus:prometheus /usr/local/bin/promtool
+   18  ls -l
+   19  sudo mv consoles /etc/prometheus
+   20  sudo mv console_libraries /etc/prometheus
+   21  ls -l
+   22  sudo mv prometheus.yml /etc/prometheus
+   23  sudo chown prometheus:prometheus /etc/prometheus
+   24  sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+   25  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+   26  sudo chown -R prometheus:prometheus /var/lib/prometheus
+   27  vi /etc/prometheus/prometheus.yml
+   28  vi /etc/systemd/system/prometheus.service
+   29  sudo systemctl daemon-reload
+   30  sudo systemctl enable prometheus
+   31  sudo systemctl start prometheus
+   32  sudo systemctl status prometheus
+   33  lsof -i -P -n | grep LISTEN
+   34  sudo ufw allow 9090/tcp
