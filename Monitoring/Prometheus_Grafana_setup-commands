@@ -59,3 +59,15 @@ Node-Exporter:
    58  history
 
 
+Grafana:
+62  wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+   63  sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+   64  apt update -y
+   65  apt install grafana
+   66  systemctl status grafana-server
+   67  systemctl start grafana-server
+   68  systemctl status grafana-server
+   69  lsof -i -P -n | grep LISTEN
+   70  history
+
+
