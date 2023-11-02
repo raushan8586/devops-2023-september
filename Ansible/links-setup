@@ -9,6 +9,29 @@ Playbook expmaples:
 https://www.middlewareinventory.com/blog/ansible-playbook-example/
 
 
+Ansible Roles:
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html
+https://github.com/ansible/ansible-examples
+
+--> https://github.com/raushan8586/ansible/tree/ansible-role
+
+Template: 
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_templating.html
+https://www.digitalocean.com/community/tutorials/how-to-create-and-use-templates-in-ansible-playbooks
+
+Handlers: 
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html#handlers
+
+Variable: https://www.digitalocean.com/community/tutorials/how-to-use-variables-in-ansible-playbooks
+
+Ansible Vault:
+https://docs.ansible.com/ansible/latest/vault_guide/vault.html
+
+Static and Dynamic Inventory
+https://docs.ansible.com/ansible/latest/inventory_guide/intro_dynamic_inventory.html
+https://docs.ansible.com/ansible/latest/plugins/inventory.html#plugin-list
+
+
 
 
 
