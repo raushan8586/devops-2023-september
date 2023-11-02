@@ -87,3 +87,92 @@ vi first-playbook.yaml
    44  ansible-playbook first-playbook.yaml
    45  history
 
+
+Ansible Role:
+79  ansible-galaxy init project1
+   80  ls -l
+   81  cd project1/
+   82  ls -l
+   83  tree
+   84  apt install tree -y
+   85  tree
+   86  cd tasks
+   87  ls -l
+   88  vi install.yml
+   89  vi configure.yml
+   90  ls -l
+   91  cat configure.yml
+   92  cd ../files
+   93  vi index1.html
+   94  cd ../tasks
+   95  ls -l
+   96  cat vi service.yml
+   97  ls -l
+   98  vi service.yml
+   99  ls -l
+  100  cat service.yml
+  101  cat install.yml
+  102  cat configure.yml
+  103  vi main.yml
+  104  cd ..
+  105  ls -l
+  106  cd ..
+  107  ls -l
+  108  cd ..
+  109  ls -l
+  110  vi site.yml
+  111  cd roles
+  112  ls -l
+  113  cd ..
+  114  ls -l
+  115  cat site.yml
+  116  ansible-playbook site.yml --syntax-check
+  117  cd roles
+  118  ls -l
+  119  cd project1/
+  120  ls -l
+  121  cd tasks
+  122  ls -l
+  123  cd ..
+  124  cd files
+  125  ls -l
+  126  cd ../..
+  127  cd ..
+  128  ls -l
+  129  ansible-playbook site.yml
+  130  cd playbooks/
+  131  ls -l
+  132  vi first-playbook.yaml
+  133  ansible-playbook first-playbook.yaml
+  134  cd ..
+  135  ls -l
+  136  cd roles
+  137  ls -l
+  138  cd  project1/
+  139  ls -l
+  140  cd files
+  141  ls -l
+  142  cat index1.html
+  143  cd ..
+  144  cd tasks
+  145  ls -l
+  146  cat main.yml
+  147  vi main.yml
+  148  cd ..
+  149  ls -l
+  150  ansible-playbook site.yml --syntax-check
+  151  ansible-playbook site.yml
+  152  cd roles/project1/files
+  153  cat index1.html
+  154  cd ..
+  155  ls -l
+  156  cd project1/
+  157  ls -l
+  158  cd handlers/
+  159  ls -l
+  160  cd ..
+  161  cd template
+  162  cd templates
+  163  ls -l
+  164  history
+
