@@ -24,4 +24,6 @@ ls -l --> WD
 git ls-files --> SA/LR 
 git status --> To confirm SA or LR
 
+SA (Staging Area) is a temporary Location
+
 
