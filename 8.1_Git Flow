@@ -1,0 +1,13 @@
+1. Master - gold copy of the application code
+2. Branched out of master - b1
+3. make changes to b1 with commits
+4. Push b1 commits to github b1
+5. b1 making pull request to merge to master
+6. master reviewing/approving pull request. Master Github to be updated with b1 commits
+
+Next day b1 staritng the work
+Goal --> b1 should have latest code from github master
+1. checkout to master - git pull origin master --> Master LR will be updated
+2. checkout to b1
+3. git rebase to update the b1 local with the latest code (git rebase master)
+
