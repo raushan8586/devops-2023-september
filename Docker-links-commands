@@ -10,6 +10,9 @@ sudo su -
 https://hub.docker.com/
 https://docs.docker.com/
 
+Docker Commands:
+https://docs.docker.com/engine/reference/commandline/docker/
+
 docker run:
 https://docs.docker.com/engine/reference/run/
 
