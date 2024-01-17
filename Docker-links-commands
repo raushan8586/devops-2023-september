@@ -203,3 +203,36 @@ docker volume ls
   192  docker login
   193  docker image push raushan8586/devops-september-2023:httpd1
 
+
+----------------------------------------------------------------------------------
+
+17th Jan 2024
+
+root@ip-172-31-38-64:~# history
+    1  uname -a
+    2  apt update -y
+    3  clear
+    4  docker version
+    5  apt install docker.io -y
+    6  clear
+    7  docker version
+    8  history
+    9  git version
+   10  docker version
+   11  clear
+   12  docker images
+   13  apt install apache2 -y
+   14  lsod -i -P -n | grep LISTEN
+   15  lsof -i -P -n | grep LISTEN
+   16  docker pull httpd
+   17  docker images
+   18  docker ps
+   19  docker inspect httpd
+   20  clear
+   21  dcoker images
+   22  clear
+   23  docker images
+   24  docker run -itd -p 82:80 httpd
+   25  docker ps
+   26  docker exec -it 221cc6440498 /bin/bash
+
