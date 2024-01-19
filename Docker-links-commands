@@ -263,9 +263,9 @@ sudo su -
 
 mysql container --> cd /var/lib/mysql --> mysql -u wordpress -p wordpress
 show databases;
-use <database>
+use <database>;
 show tables;
-select * from <table>
+select * from <table>;
 
    17  exit
    18  docker ps
