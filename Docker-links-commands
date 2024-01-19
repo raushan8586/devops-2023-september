@@ -240,3 +240,40 @@ root@ip-172-31-38-64:~# history
    26  docker exec -it 221cc6440498 /bin/bash
 Navigate to /usr/local/apache2/htdocs in the container to fidn index.html
 
+
+18th Jan 2024
+root@ip-172-31-0-64:~# history
+sudo su -
+    1  apt update -y
+    2  apt install docker.io -y
+    3  docker run -itd -p 82:80 httpd
+    4  docker network ls
+    5  clear
+    6  docker-compose version
+    7  apt install docker-compose -y
+    8  vi docker-compose.yaml
+    9  docker ps
+   10  docker rm -f 47b2d18f5d96
+   11  docker ps
+   12  clear
+   13  ls -l
+   14  docker-compose up -d
+   15  docker ps
+   16  docker exec -it 7863766b4023 /bin/bash
+
+mysql container --> cd /var/lib/mysql --> mysql -u wordpress -p wordpress
+show databases;
+use <database>
+show tables;
+select * from <table>
+
+   17  exit
+   18  docker ps
+   19  docker-compose down
+   20  docker-compose up -d
+   21  docker volume la
+   22  docker volume ls
+   23  docker netowrk ls
+   24  docker network ls
+   25  ls -l
+   26  history
