@@ -281,3 +281,8 @@ select * from <table>;
  29  docker images
    30  docker image tag wordpress:latest raushan8586/devops-jan-2024:wordpress
    31  docker image push raushan8586/devops-jan-2024:wordpress
+
+docker logs fd0ac55645a0
+   41  clear
+   42  docker ps
+   43  docker logs 95f620e1df7c
