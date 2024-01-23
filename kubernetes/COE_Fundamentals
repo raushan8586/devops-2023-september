@@ -1,0 +1,18 @@
+Container Engines (CE) --> Docker, Rocket, Podman, Containerd
+
+Container Orchestration Engine (COE) --> Kubernetes
+
+why?
+auto-scaling
+auto-loadbalancing
+auto-deployment
+auto-healing
+
+
+Kubernetes Objects:
+1. Pods --> container (M1)
+2. Deployment (m1d)
+3. ReplicaSet (m1r)
+4. services --> to expose the pods (front-end, back-end)
+
+
