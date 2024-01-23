@@ -1,6 +1,6 @@
 Container Engines (CE) --> Docker, Rocket, Podman, Containerd
 
-Container Orchestration Engine (COE) --> Kubernetes
+Container Orchestration Engine (COE) --> Kubernetes (k8s)
 
 why?
 auto-scaling
