@@ -15,4 +15,8 @@ Kubernetes Objects:
 3. ReplicaSet (m1r)
 4. services --> to expose the pods (front-end, back-end)
 
+Kubernetes Cloud Managed services:
+AWS --> EKS
+Azure --> AKS
+GCP --> GKE
 
