@@ -34,6 +34,14 @@ kubectl get po -o wide
 
 kubectl get po
 
+   20  kubectl apply -f loadbalancer-service.yaml 
+   21  kubectl get all
+   22  kubectl logs frontend-deployment-8577864bdc-ktxwn
+   23  kubectl describe pod frontend-deployment-8577864bdc-ktxwn
+   24  kubectl exec -it frontend-deployment-8577864bdc-ktxwn -- bin/sh
+   25  kubectl get nodes -o wide
+   26  kubectl get po -o wide
+
 kubectl delete -f nodeport-service.yaml
 
 kubectl delete -f loadbalancer-service.yaml
