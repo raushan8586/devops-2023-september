@@ -75,7 +75,6 @@ clean package
    56  ls -l
    57  mvn -version
    58  M3_HOME='/opt/maven'
-   59  echo PATH
    60  echo $PATH
    61  PATH="$M3_HOME/bin:$PATH"
    62  export PATH
