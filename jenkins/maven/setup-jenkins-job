@@ -61,3 +61,24 @@ Create a maven project
 Goals
 build package
 clean package
+
+
+1st Feb 2024:
+48  wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+   49  ls -l
+   50  tar xvzf apache-maven-3.9.6-bin.tar.gz
+   51  ls -l
+   52  mv apache-maven-3.9.6 /opt/
+   53  cd /opt
+   54  ls -l
+   55  mv apache-maven-3.9.6 maven
+   56  ls -l
+   57  mvn -version
+   58  M3_HOME='/opt/maven'
+   59  echo PATH
+   60  echo $PATH
+   61  PATH="$M3_HOME/bin:$PATH"
+   62  export PATH
+   63  echo $PATH
+   64  mvn -version
+   65  history
