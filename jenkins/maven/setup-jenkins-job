@@ -24,6 +24,8 @@ Install maven 3.6.x
 
    Better to install a higher version using below commands:
    https://maven.apache.org/download.cgi
+
+Note: use t2.medium instance type to install jenkins, particular to build mavan-job
    
    40  clear
    41  ls -l
