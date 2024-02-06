@@ -3,3 +3,6 @@ https://www.devopsschool.com/blog/terraform-tutorials-list-of-terraform-blocks-w
 
 
 https://medium.com/@mitesh_shamra/terraform-provisioner-fa0911d65ce9
+
+Provisioner:
+https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
