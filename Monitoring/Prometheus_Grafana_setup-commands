@@ -1,3 +1,5 @@
+EC2 - t2.medium
+
 Prometheus:
 
 root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
