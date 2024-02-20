@@ -6,9 +6,9 @@ makemytrip --> Deep Kalra
 2. Requirements Gathering
 3. Planning & Designing
 4. Coding
-5. Build the code --> compile, package --> .jar/.war/.ear (artifacts)
+5. Build the code --> compile, unit test, package --> .jar/.war/.ear (artifacts)
 6. Deploy the artifacts to QA/Staging
-7. Testing/Validations --> Functional Testing / Performance Testing / Security Testing
+7. Testing/Validations --> Functional Testing / Performance Testing / Security Testing / User Acceptance Testing
 8. Deploy to Production
 9. Monitoring
 10. Feedback / Maintenance
