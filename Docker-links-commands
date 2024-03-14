@@ -13,8 +13,8 @@ https://docs.docker.com/
 Docker Commands:
 https://docs.docker.com/engine/reference/commandline/docker/
 
-docker run:
-https://docs.docker.com/engine/reference/run/
+Docker Run Command:
+https://docs.docker.com/reference/cli/docker/container/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 
