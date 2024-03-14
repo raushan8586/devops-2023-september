@@ -34,6 +34,10 @@ MySQL --> https://www.w3schools.com/MySQL/default.asp
     9  docker images
    10  docker inspect httpd
    11  docker run -itd -p 82:80 httpd
+
+To name a container
+docker run -itd --name intellipaat -p 82:80 httpd
+
    12  docker ps
    13  docker container ls
    14  lsof -i -P -n | grep LISTEN
