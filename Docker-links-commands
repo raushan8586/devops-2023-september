@@ -18,6 +18,8 @@ https://docs.docker.com/reference/cli/docker/container/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 
+Docker Network --> https://docs.docker.com/network/drivers/
+
 Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
 
 MySQL --> https://www.w3schools.com/MySQL/default.asp
