@@ -11,5 +11,15 @@ Container Orchestration Engine (COE)
 
 --> Docker Swarm, Apache mesos
 
+Container Orchestration Engine
+1. Docker Swarm
+2. Kubernetes --> Google --> Borg --> Kubernetes --> Huge Industry Adoption, Support
+3. apache Mesos
+
+AWS -> EKS (Elastic Kubernetes Service)
+Azure -> AKS
+GCP -> GKE
+Oracle --> OKE
+
 
 https://mohan08p.medium.com/simplified-kubernetes-architecture-3febe12480eb
