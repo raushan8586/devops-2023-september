@@ -1,5 +1,7 @@
 Install Kubernetes on Ubuntu 18.04 LTS
 
+https://medium.com/@mrdevsecops/set-up-a-kubernetes-cluster-with-kubeadm-508db74028ce
+
 Each Node --> 2 Cores / 6 GB RAM
 
 *********************
