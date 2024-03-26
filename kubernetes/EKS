@@ -1,6 +1,6 @@
 3 Command lines are required:
 1. kubectl --> Default command line for kuberntes
-2. aws cli --> https://docs.aws.amazon.com/cli/latest/
+2. aws cli --> https://docs.aws.amazon.com/cli/latest/ --> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
 --> https://eksctl.io/installation/
 
