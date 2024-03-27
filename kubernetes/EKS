@@ -14,6 +14,12 @@ kube-node-lease   Active   14m
 kube-public       Active   14m
 kube-system       Active   14m
 
+CoreDNS
+CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS. CoreDNS provides name resolution for all Pods in the cluster. This add-on is installed, by default, on your cluster. For more information, see Working with the CoreDNS Amazon EKS add-on.
+
+kube-proxy
+This add-on maintains network rules on your Amazon EC2 nodes and enables network communication to your Pods. This add-on is installed, by default, on your cluster. For more information, see Working with the Kubernetes kube-proxy add-on.
+
 
 
 Commands
