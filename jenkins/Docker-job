@@ -11,3 +11,6 @@ If you need to run commands/scripts as root user-->
 
 visudo
 jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers
+
+Add a date suffix to a folder
+mkdir mydir_$(date +%Y-%m-%d)
