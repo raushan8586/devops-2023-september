@@ -27,3 +27,5 @@ terraform destroy
 
 Terraform Examples
 https://github.com/stacksimplify/hashicorp-certified-terraform-associate
+
+https://plugins.jenkins.io/terraform/
