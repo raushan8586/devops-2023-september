@@ -6,3 +6,11 @@
 Ansible --> Configuration Management tool
 
 Other CMTs --> Chef and Puppet
+
+
+Simple Operations --> Adhoc Commands
+  Eg --> ansible host1 -m ping
+
+Moderate Complex --> Ansible-playbook
+
+Very-Complex and Structured --> Ansible-roles
