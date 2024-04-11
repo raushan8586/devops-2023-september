@@ -2,6 +2,8 @@ Links:
 Modules: https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
          https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html
 
+https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html
+
 Adhoc Commands:
 https://docs.ansible.com/ansible/2.8/user_guide/intro_adhoc.html
 https://www.middlewareinventory.com/blog/ansible-ad-hoc-commands/
