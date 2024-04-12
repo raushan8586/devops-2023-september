@@ -33,6 +33,7 @@ Variable: https://www.digitalocean.com/community/tutorials/how-to-use-variables-
 
 Ansible Vault:
 https://docs.ansible.com/ansible/latest/vault_guide/vault.html
+https://docs.ansible.com/ansible/latest/vault_guide/index.html
 
 Static and Dynamic Inventory
 https://docs.ansible.com/ansible/latest/inventory_guide/intro_dynamic_inventory.html
