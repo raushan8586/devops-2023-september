@@ -39,6 +39,9 @@ Static and Dynamic Inventory
 https://docs.ansible.com/ansible/latest/inventory_guide/intro_dynamic_inventory.html
 https://docs.ansible.com/ansible/latest/plugins/inventory.html#plugin-list
 
+Default in Ansible Role
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html
+
 
 
 
