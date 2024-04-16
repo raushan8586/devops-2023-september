@@ -4,7 +4,7 @@ Continuous Monitoring --> why?
 2. Performance
 
 Roles of a DevOps Engineer (Continuous Monitoring):
-1. Perform POC on the monitoring tools
+1. Perform POC on the monitoring tools (POC --> Proof of Concept)
 2. setup/install the monitoring tool
 3. Creating Dashboards for metrics --> CPU, Memory Disk, Response time, status code, uptime
 4. Alerting
@@ -12,3 +12,10 @@ Roles of a DevOps Engineer (Continuous Monitoring):
 Monitoring tools:
 1. Prometheus & Grafana
 2. ELK (Elasticsearch, Logstash, Kibana)
+
+time-series DB --> InfluxDB, Prometheus
+Grafana --> visualization
+
+ELK
+ElasticSearch --> Database
+Kibana --> Visualization tool
