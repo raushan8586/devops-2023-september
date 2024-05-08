@@ -1,13 +1,13 @@
-Job1 : Git/GitHub --> uploaded the code
+Job1 : GIT/GITHUB --> uploaded the code
 
-Job2 : Maven --> build the code (compile + unit test (junit) + Package) --> .jar / .war / .ear --> artifacts
-Job3:  the code to QA env --> Docker, Kubernetes, Ansible
+Job2 : MAVEN+JENKINS --> build the code (compile + unit test (junit) + Package) --> .jar / .war / .ear --> artifacts
+Job3:  the code to QA env --> DOCKER, KUBERNETES, ANSIBLE
 Job4: Functional Testing (SIT) --> Selenium, testng
 Job5: Performance Testing --> JMeter
 Job6: Security Testing --> Fortify, SonarQube
 Job7: UAT Testing --> User Acceptance Testing
 
-Job8 : Deploy the code to Producction --> Docker, Kubernetes, Ansible
+Job8 : Deploy the code to Producction --> DOCKER, KUBERNETES, ANSIBLE
 
 Objective --> 
 
