@@ -13,7 +13,7 @@ Types of VCS
 1. Centralized VCS --> svn (sub-version)
   Drawbacks:
     a. Multiple developers cann't work on the same files/project(module) at the same time
-    b. To make changes, developers need to be connected to the internet
+    b. To make changes, developers need to be connected to the internet all the time
 
 2. Distributed VCS --> Git
     Local Repo
