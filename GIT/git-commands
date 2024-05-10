@@ -103,4 +103,9 @@
   103  git log
   104  git log --oneline
   105  git config --list
-  106  history
+
+117  git remote -v
+  118  git remote add origin https://github.com/raushan8586/devops-may-2024.git
+  119  git remote -v
+  120  git status
+  121  git push origin master
