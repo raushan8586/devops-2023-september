@@ -313,3 +313,103 @@ Conflict Scenario: --> Parallel Development + File Name same --> Needs to be res
    31  git stash list
 
 
+-------------------------------------------------------------
+
+17th May --> git commands
+
+root@ip-172-31-9-149:~/project1# history
+    1  apt update -y
+    2  clear
+    3  git --version
+    4  ls -l
+    5  pwd
+    6  git clone https://github.com/raushan8586/devops-2023-september.git
+    7  history
+    8  ls -l
+    9  cd devops-2023-september/
+   10  ls -l
+   11  ls
+   12  ls -l
+   13  ls -lrt
+   14  clear
+   15  ls -l
+   16  clear
+   17  git log --oneline
+   18  pwd
+   19  ls -l
+   20  clear
+   21  git log --oneline
+   22  ls -l
+   23  cd ..
+   24  clear
+   25  ls -l
+   26  mkdir project1
+   27  cd project1/
+   28  pwd
+   29  ls -la
+   30  cd ../devops-2023-september/
+   31  ls -la
+   32  cd ../project1/
+   33  clear
+   34  ls -la
+   35  git init
+   36  ls -la
+   37  touch sample1.txt
+   38  vi sample1.txt 
+   39  car sample1.txt 
+   40  clear
+   41  ls -l
+   42  cat sample1.txt 
+   43  vi sample.java
+   44  cat sample.java 
+   45  ls -l
+   46  ls -la
+   47  git status
+   48  cd ..
+   49  mkdir project2
+   50  cd project2
+   51  vi demo.txt
+   52  cat demo.txt 
+   53  git status
+   54  cd ../project1/
+   55  clear
+   56  git status
+   57  pwd
+   58  git status
+   59  git log --oneline
+   60  git add sample.java sample1.txt
+   61  ls -l
+   62  clear'
+   63  clear
+   64  git status
+   65  git commit -m "1st-commit"
+   66  git log --oneline
+   67  git log
+   68  git remote -v
+   69  git remote add origin https://github.com/raushan8586/repo-demo.git
+   70  clear
+   71  git remote -v
+   72  git status
+   73  git push origin master
+   74  clear
+   75  ls -l
+   76  vi demo.java
+   77  cat demo.java 
+   78  git status
+   79  ls -l
+   80  git add demo.java 
+   81  git status
+   82  ls -l
+   83  git ls-files
+   84  git commit -m "2nd-commit"
+   85  git status
+   86  ls -l
+   87  git ls-files
+   88  clear
+   89  ls -l
+   90  git ls-files
+   91  git status
+   92  git remote -v
+   93  git push origin master
+
+
