@@ -411,5 +411,7 @@ root@ip-172-31-9-149:~/project1# history
    91  git status
    92  git remote -v
    93  git push origin master
+ 96  git config --global user.email "raushan8586.kumar@gmail.com"
+   97  git config --global user.name "Raushan Kumar"
 
 
