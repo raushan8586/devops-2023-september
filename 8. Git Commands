@@ -423,4 +423,8 @@ root@ip-172-31-9-149:~/project1# history
   142  git show 107fd7b
   143  git checkout b1
   144  git branch
+  143  git checkout b1
+  144  git branch
+  145  git log --oneline
+  146  git push origin b1
 
