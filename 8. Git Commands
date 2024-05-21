@@ -414,4 +414,13 @@ root@ip-172-31-9-149:~/project1# history
  96  git config --global user.email "raushan8586.kumar@gmail.com"
    97  git config --global user.name "Raushan Kumar"
 
+----------------------------------------------------------------------------------------------
+21st May 2024
+  138  git status
+  139  git branch b1 master
+  140  git branch
+  141  git log --oneline
+  142  git show 107fd7b
+  143  git checkout b1
+  144  git branch
 
