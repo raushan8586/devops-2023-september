@@ -1,0 +1,111 @@
+ 1  git -version
+    2  git version
+    3  git clone https://github.com/raushan8586/devops-2023-september.git
+    4  ls -l
+    5  cd devops-2023-september/
+    6  ls -l
+    7  git log --oneline
+    8  ls -la
+    9  cd ..
+   10  clear
+   11  mkdir project1
+   12  cd project1/
+   13  ls -la
+   14  pwd
+   15  ls -la
+   16  git init
+   17  ls -la
+   18  cd ..
+   19  ls -l
+   20  cd project1/
+   21  ls -la
+   22  ls -l
+   23  cd devops-2023-september/
+   24  ls -l
+   25  ls -la
+   26  pwd
+   27  cd ..
+   28  ls -l
+   29  cd project1/
+   30  git version
+   31  ls -la
+   32  pwd
+   33  man pwd
+   34  cd ..
+   35  mkdir project2
+   36  cd project2
+   37  ls la
+   38  ls -la
+   39  cd ../project1/
+   40  clear
+   41  ls -l
+   42  pwd
+   43  cd /
+   44  ls -l
+   45  cd /root/project1
+   46  clear
+   47  pwd
+   48  ls -l
+   49  ls
+   50  pwd
+   51  touch file1.java
+   52  vi file1.java 
+   53  cat file1.java 
+   54  ls -l
+   55  pwd
+   56  ls -la
+   57  ls -l
+   58  git add file1.java 
+   59  pwd
+   60  cd ../project2/
+   61  ls -la
+   62  vi sample1.java
+   63  ls -l
+   64  cat sample1.java 
+   65  ls -la
+   66  git add sample1.java 
+   67  cd ../project1/
+   68  clear
+   69  ls -la
+   70  ls -l
+   71  git ls-files
+   72  git status
+   73  ls -l
+   74  clear
+   75  git log
+   76  git log --oneline
+   77  git commit -m "1st commit"
+   78  git log
+   79  git ls-files
+   80  git status
+   81  ls -l
+   82  clear
+   83  pwd
+   84  ls -l
+   85  git status
+   86  vi file2.java
+   87  ls -l
+   88  git ls-files
+   89  git status
+   90  git add file2.java 
+   91  git status
+   92  git ls-files
+   93  git commit -m "2nd commit"
+   94  git status
+   95  git ls-files
+   96  git log
+   97  git config --global user.email "raushan8586.kumar@gmail.com"
+   98  git config --global user.name "Raushan Kumar"
+   99  git log
+  100  vi file3.java
+  101  git add file3.java 
+  102  git commit -m "3rd commit"
+  103  git log
+  104  git log --oneline
+  105  git config --list
+
+117  git remote -v
+  118  git remote add origin https://github.com/raushan8586/devops-may-2024.git
+  119  git remote -v
+  120  git status
+  121  git push origin master
