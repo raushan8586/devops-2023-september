@@ -427,4 +427,60 @@ root@ip-172-31-9-149:~/project1# history
   144  git branch
   145  git log --oneline
   146  git push origin b1
+----------------------------------------------------------------------------------------------------------
 
+22nd May 2024
+git branch
+  169  git checkout -b b2 master
+  170  git branch
+  171  git log --oneline
+  172  git checkout master
+  173  git log --oneline
+  174  git branch
+  175  ls -l
+  176  git pull origin master
+  177  git log --oneline
+  178  git checkout b2
+  179  git rebase master
+  180  git log --oneline
+  181  git checkout b2
+  182  vi b2_file1.java
+  183  git add .
+  184  git commit -m "b2_1st-commit"
+  185  git push origin b2
+  186  git branch
+  187  git checkout -b b3 master
+  188  git log --oneline
+  189  git checkout b2
+  190  git log --oneline
+  191  git checkout b3
+  192  git merge b2 b3
+  193  git log --oneline
+  194  git branch
+  195  git log --oneline
+  196  vi app1.log
+  197  vi readMe
+  198  ls -l
+  199  git status
+  200  vi sample6.html
+  201  git status
+  202  git add sample6.html 
+  203  git status
+  204  git commit -m "sample6.java-commit"
+  205  git status
+  206  vi .gitignore
+  207  git status
+  208  git add .gitignore
+  209  git commit -m "git-ignore-file-added"
+  210  git status
+  211  ls -l
+  212  git log --oneline
+  213  vi sample7.java
+  214  git add .
+  215  git commit -m "sample7.java-added"
+  216  git log --oneline
+  217  git show 445f58c
+  218  git revert 445f58c
+  219  git log --oneline
+  220  ls -l
+  221  git show 480e521
