@@ -198,7 +198,8 @@ Rebase --> When the feature branch needs to get updated (get all the commits) fr
 Go to the feature branch (b1)
 git rebase master
 
-merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
+merge -- additional commits from a feature branch to another feature branch --> syncing updates
+rebase -- local master to feature branch --> syncing updates
 
 Merge -->
 git merge src destination
