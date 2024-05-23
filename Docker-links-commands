@@ -1,0 +1,294 @@
+Installation:
+sudo su -
+      1  apt update -y
+    2  clear
+    3  apt install docker.io -y
+    4  docker version
+    5  docker info
+
+  Images:
+https://hub.docker.com/
+https://docs.docker.com/
+
+Docker Commands:
+https://docs.docker.com/engine/reference/commandline/docker/
+
+Docker Run Command:
+https://docs.docker.com/reference/cli/docker/container/run/
+
+Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+
+Docker Network --> https://docs.docker.com/network/drivers/
+
+Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+
+MySQL --> https://www.w3schools.com/MySQL/default.asp
+
+
+1  apt update -y
+    2  apt install docker.io -y
+    3  docker images
+    4  docker pull httpd
+    5  docker images
+    6  apt install apache2 -y
+    7  systemctl status apache2
+    8  lsof -i -P -n | grep LISTEN
+    9  docker images
+   10  docker inspect httpd
+   11  docker run -itd -p 82:80 httpd
+
+To name a container
+docker run -itd --name intellipaat -p 82:80 httpd
+
+   12  docker ps
+   13  docker container ls
+   14  lsof -i -P -n | grep LISTEN
+   15  docker ps
+   16  docker exec -it 04473fe77015 /bin/bash --> To login (go insider) to the container, updated the package (apt update), install vim (apt install vim), exit (existed the container)
+   17  docker images
+   18  docker ps
+   19  docker commit 04473fe77015 httpd_new --> create the image from container
+   20  docker images
+
+22  docker pull fedora
+   23  docker images
+   24  docker run -itd fedora
+   25  docker ps
+   26  docker rename 3f48ad86c7ef My_Fedora
+   27  docker ps
+   28  docker exec -it 3f48ad86c7ef /bin/bash
+   29  docker stats
+   30  docker container ls
+   31  docker logs 04473fe77015
+   32  dcoker images
+   33  docker images
+   34  mkdir project1
+   35  cd project1/
+   36  touch Dockerfile
+
+
+-------------------------------
+
+docker volume ls
+   49  docker volume create intellipaat-volume
+   50  docker volume ls
+   51  docker ps
+   52  docker exec -it 96fa8d4ab869 /bin/bash
+   53  docker ps
+   54  docker rm -f 96f
+   55  docker ps
+   58  docker volume ls
+   59  docker run -itd --mount source=intellipaat-volume,target=/usr/local/apache2/htdocs -p 82:80 httpd_new
+   60  docker ps
+   61  docker exec -it 721759978adc /bin/bash
+   62  find / -name intellipaat-volume
+   63  cd /var/lib/docker/volumes/intellipaat-volume
+   64  ls -l
+   65  cd _data/
+   66  ls -l
+   67  cat index.html
+   68  docker exec -it 721759978adc /bin/bash
+   69  ls -l
+   70  cat index2.html
+   71  docker ps
+   72  docker rm -f 721
+   73  docker ps
+   74  ls -l
+
+-------------------------------------------------------
+ 76  ls -l
+   77  cd /
+   78  ls -l
+   79  cd /root
+   80  ls -l
+   81  cd project1/
+   82  ls -l
+   83  rm Dockerfile
+   84  ls -l
+   85  clear
+   86  ls -l
+   87  touch Dockerfile
+   88  vi Dockerfile
+   89  docker images
+   90  vi Dockerfile
+   91  ls -l
+   92  vi index1.html
+   93  vi index2.html
+   94  ls -l
+   95  docker ps
+   96  cat Dockerfile
+   97  docker build . -t httpd1
+   98  docker images
+   99  docker run -itd -p 82:80 httpd1
+  100  cd project1/
+  101  ls -l
+
+
+
+103  cd ..
+  104  mkdir project2
+  105  cd project2
+  106  touch Dockerfile
+  107  vi Dockerfile
+  108  vi index1.html
+  109  ls -l
+  110  cat Dockerfile
+  111  docker build . -t ubuntu1
+  112  docker images
+  113  docker run -itd -p 82:80 ubuntu1
+  114  docker ps
+  115  docker inspect ubuntu1
+  116  docker ps
+  117  docker inspect 828cdf681f67
+  118  cat Dockerfile
+  119  cd ../project1
+  120  cay Dockerfile
+  121  cat Dockerfile '
+  122  cat Dockerfile
+  123  docker images
+  124  find / -name ubuntu1
+  125  ls -l
+  126  cd /var/lib/docker/
+  127  ls -l
+  128  cd image/
+  129  ls -l
+  130  cd overlay2/
+  131  ls -l
+  132  cd imagedb/
+  133  ls -l
+  134  cd content/
+  135  ls -l
+  136  clear
+  137  cd ~
+  138  ls -l
+  139  docker ps
+  140  docker inspect 828cdf681f67
+  141  docker network ls
+  142  docker inspect 469f7f7557be
+  143  docker inspect 828cdf681f67
+  144  docker inspect 469f7f7557be
+  145  docker ps
+  146  docker inspect 828cdf681f67
+  147  docker network ls
+  148  docker inspect 469f7f7557be
+
+
+
+ 150  doccker-compose version
+  151  docker-compose version
+  152  apt install docker-compose -y
+  153  docker-compose version
+  154  ls -l
+  155  mkdir project3
+  156  cd project3
+  157  docker ps
+  158  docker rm -f 828
+  159  docker ps
+  160  ls -l
+  161  vi docker-compose.yml
+  162  cat docker-compose.yml
+  163  docker-compose up -d
+  164  lsof -i -P -n | grep LISTEN
+  165  vi docker-compose.yml
+  166  docker ps
+  167  docker-compose down
+  168  docker-compose up -d
+  169  docker ps
+  170  docker volume ls
+  171  docker network ls
+
+
+
+  182  docker-compose up -d
+  183  docker ps
+  184  cat docker-compose.yml
+  185  docker ps
+  186  docker exec -it 824329e8f770 /bin/bash
+  187  docker ps
+  188  docker exec -it 4b63a2f753ed /bin/bash --> mysql -u wordpress -p wordpress (connect to mysql db client/instance using this)
+  189  docker ps
+  190  docker images
+  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1
+  192  docker login
+  193  docker image push raushan8586/devops-september-2023:httpd1
+
+
+----------------------------------------------------------------------------------
+
+17th Jan 2024
+
+root@ip-172-31-38-64:~# history
+    1  uname -a
+    2  apt update -y
+    3  clear
+    4  docker version
+    5  apt install docker.io -y
+    6  clear
+    7  docker version
+    8  history
+    9  git version
+   10  docker version
+   11  clear
+   12  docker images
+   13  apt install apache2 -y
+   14  lsod -i -P -n | grep LISTEN
+   15  lsof -i -P -n | grep LISTEN
+   16  docker pull httpd
+   17  docker images
+   18  docker ps
+   19  docker inspect httpd
+   20  clear
+   21  dcoker images
+   22  clear
+   23  docker images
+   24  docker run -itd -p 82:80 httpd
+   25  docker ps
+   26  docker exec -it 221cc6440498 /bin/bash
+Navigate to /usr/local/apache2/htdocs in the container to fidn index.html
+
+
+18th Jan 2024
+root@ip-172-31-0-64:~# history
+sudo su -
+    1  apt update -y
+    2  apt install docker.io -y
+    3  docker run -itd -p 82:80 httpd
+    4  docker network ls
+    5  clear
+    6  docker-compose version
+    7  apt install docker-compose -y
+    8  vi docker-compose.yaml
+    9  docker ps
+   10  docker rm -f 47b2d18f5d96
+   11  docker ps
+   12  clear
+   13  ls -l
+   14  docker-compose up -d
+   15  docker ps
+   16  docker exec -it 7863766b4023 /bin/bash
+
+mysql container --> cd /var/lib/mysql --> mysql -u wordpress -p wordpress
+show databases;
+use <database>;
+show tables;
+select * from <table>;
+
+   17  exit
+   18  docker ps
+   19  docker-compose down
+   20  docker-compose up -d
+   21  docker volume la
+   22  docker volume ls
+   23  docker netowrk ls
+   24  docker network ls
+   25  ls -l
+   26  history
+
+ 29  docker images
+   30  docker image tag wordpress:latest raushan8586/devops-jan-2024:wordpress
+   31  docker image push raushan8586/devops-jan-2024:wordpress
+
+docker logs fd0ac55645a0
+   41  clear
+   42  docker ps
+   43  docker logs 95f620e1df7c

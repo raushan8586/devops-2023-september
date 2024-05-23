@@ -1,0 +1,34 @@
+Prometheus:
+--> time-series DB
+
+https://prometheus.io/docs/introduction/overview/
+
+Exporters
+https://prometheus.io/docs/instrumenting/exporters/
+
+Installation:
+Binaries: 
+https://prometheus.io/download/
+
+Install Prometheus
+https://www.cherryservers.com/blog/install-prometheus-ubuntu
+
+
+Node Exporter
+https://prometheus.io/docs/guides/node-exporter/
+
+
+
+Grafana:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-20-04
+--> Step 1
+
+OR
+https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+
+--> open port 3000 in SG
+
+Import this dashboard
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+import 1860
+

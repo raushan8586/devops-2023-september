@@ -1,0 +1,86 @@
+Links:
+https://maven.apache.org/
+
+https://jenkov.com/tutorials/maven/maven-tutorial.html
+
+Get started with Maven:
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+Maven Build lifecycle-->
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+MVN Repository
+https://mvnrepository.com/
+
+
+
+Commands:
+37  java -version
+
+Install maven 3.6.x
+   38  apt-get install maven -y
+   39  mvn -version
+
+
+   Better to install a higher version using below commands:
+   https://maven.apache.org/download.cgi
+
+Note: use t2.medium instance type to install jenkins, particular to build mavan-job
+   
+   40  clear
+   41  ls -l
+   42  wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
+   43  ls -l
+   44  tar xvzf apache-maven-3.9.5-bin.tar.gz
+   45  ls -l
+   46  mv apache-maven-3.9.5 /opt/
+   47  cd /opt
+   48  ls -l
+   49  mv apache-maven-3.9.5 maven
+   50  ls -l
+   51  pwd
+   52  M3_HOME='/opt/maven'
+   53  PATH="$M3_HOME/bin:$PATH"
+   54  export PATH
+   55  mvn -version
+   56  cd /var/lib/jenkins/workspace/maven-job
+   57  ls -l
+   58  cd target/
+   59  ls -l
+   60  history
+
+
+mvn -version
+Manage Jenkins --> Tools
+
+Maven plugin needs to be installed
+
+https://github.com/jenkins-docs/simple-java-maven-app.git
+https://github.com/raushan8586/MyLab.git --> does not have full-fledged code
+
+Create a maven project
+
+Goals
+build package
+clean package
+
+Artifact Name: ArtifactID + Version + Packaging --> as specified in pom.xml
+
+1st Feb 2024:
+48  wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+   49  ls -l
+   50  tar xvzf apache-maven-3.9.6-bin.tar.gz
+   51  ls -l
+   52  mv apache-maven-3.9.6 /opt/
+   53  cd /opt
+   54  ls -l
+   55  mv apache-maven-3.9.6 maven
+   56  ls -l
+   57  mvn -version
+   58  M3_HOME='/opt/maven'
+   60  echo $PATH
+   61  PATH="$M3_HOME/bin:$PATH"
+   62  export PATH
+   63  echo $PATH
+   64  mvn -version
+   65  history

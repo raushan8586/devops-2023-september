@@ -1,0 +1,8 @@
+4 main K8s objects:
+1. Pod --> actual applications are depoyed
+2. Replica Set --> To maintain a stable number of pods
+3. Deployment --> Deploy without DOWNTIME, Rollbacks (deployment history)
+4. Services --> To expose the pods, services are deployed
+  a. NodePort --> to expose the front-end pods
+  b. LoadBalancer --> to load balancer the traffic across multiple nodes
+  c. ClusterIP --> For the communication between front-end pods and backend pods

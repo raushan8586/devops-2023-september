@@ -1,0 +1,32 @@
+
+https://www.terraform.io/
+
+https://registry.terraform.io/
+
+Terraform AWS Documentation
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+Download
+https://www.terraform.io/downloads
+
+AWS CLI
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+https://code.visualstudio.com/download
+
+
+terraform init
+
+terraform refresh → Get you the latest state of the infrastructure
+
+terraform plan
+
+terraform apply
+
+terraform destroy
+
+Terraform Examples:-
+https://github.com/stacksimplify/hashicorp-certified-terraform-associate
+
+Jenkins Terraform Integration:-
+https://plugins.jenkins.io/terraform/

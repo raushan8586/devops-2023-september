@@ -200,6 +200,11 @@ git rebase master
 
 merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
 
+Merge -->
+git merge src destination
+checkout to the destination
+git merge b3 master
+
 To avoid parallel development, perform rebase before merge. We should try to perform linear development
 
  1  git log

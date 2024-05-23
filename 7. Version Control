@@ -6,14 +6,14 @@ Git --> Version control system
 GitHUb --> Source Code Management / Online Code Repo --> Remote Repo
 
 Why VCS?
-1. To track chnages --> who commited the changes? what was changed? --> commit ID
+1. To track changes --> who commited the changes? what was changed? --> commit ID
 2. To retrieve files from accidental deletes
 
 Types of VCS
 1. Centralized VCS --> svn (sub-version)
   Drawbacks:
-    a. Multiple developers cann't work on the same files/project at the same time
-    b. To make changes, developers need to be connected to the internet
+    a. Multiple developers cann't work on the same files/project(module) at the same time
+    b. To make changes, developers need to be connected to the internet all the time
 
 2. Distributed VCS --> Git
     Local Repo
@@ -23,5 +23,7 @@ ls -la --> list the hideen files/folder --> To check whether the folder is being
 ls -l --> WD
 git ls-files --> SA/LR 
 git status --> To confirm SA or LR
+
+SA (Staging Area) is a temporary Location
 
 

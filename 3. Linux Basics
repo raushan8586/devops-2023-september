@@ -13,3 +13,7 @@ cat --> read a file
 rmdir
 rm
 chmod --> permissions
+
+Linux distributions:
+CentOS - Amazon Linux, Redhat, Fedora - yum is the default package manager
+Debian - Ubuntu - apt is the default package manager
