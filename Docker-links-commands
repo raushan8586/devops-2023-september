@@ -305,3 +305,21 @@ docker logs fd0ac55645a0
    41  clear
    42  docker ps
    43  docker logs 95f620e1df7c
+
+
+
+24th May
+------------
+364  lsof -i -P -n | grep LISTEN
+  365  apt update -y
+  366  clear
+  367  apt install apache2 -y
+  368  lsof -i -P -n | grep LISTEN
+  369  cat /var/www/html/
+  370  cd /var/www/html/
+  371  ls -l
+  372  vi raushan-page.html
+  373  docker version
+  374  apt install docker.io -y
+  375  clear
+  376  docker version
