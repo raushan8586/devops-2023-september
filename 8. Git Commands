@@ -569,3 +569,50 @@ git log --oneline
   306  git log --graph --pretty=oneline
   307  git log
 
+-----------------------------------------------
+24th May
+
+ 314  vi code1-file.java
+  315  vi code2-file.java
+  316  git status
+  317  ls -l
+  318  git branch
+  319  git checkout b2
+  320  git status
+  321  git checkout b3
+  322  git status
+  323  ls -l
+  324  git add .
+  325  git commit -m "code-files-added"
+  326  git status
+  327  vi code1-file.java 
+  328  vi code2-file.java 
+  329  git status
+  330  git stash list
+  331  git stash
+  332  git status
+  333  git stash list
+  334  git show stash@{0}
+  335  git stash pop stash@{0}
+  336  git status
+  337  git stash -p
+  338  git status
+  339  git stash list
+  340  git show stash@{0}
+  341  git add .
+  342  git commit -m "code2-file.java"
+  343  git status
+  344  git stash list
+  345  git stash clear
+  346  git stash list
+  347  vi code1-file.java 
+  348  git stash list
+  349  git status
+  350  git stash
+  351  git stash list
+  352  vi code2-file.java 
+  353  git status
+  354  git stash
+  355  git stash list
+  356  git stash drop stash@{1}
+  357  git stash list
