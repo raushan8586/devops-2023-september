@@ -18,6 +18,7 @@ Docker Run Command:
 https://docs.docker.com/reference/cli/docker/container/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/build/building/multi-stage/
 
 Docker Network --> https://docs.docker.com/network/drivers/
 
