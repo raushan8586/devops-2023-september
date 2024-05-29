@@ -1,4 +1,5 @@
 Installation:
+To be a root user -->
 sudo su -
       1  apt update -y
     2  clear
