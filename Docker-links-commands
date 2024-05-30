@@ -328,3 +328,31 @@ docker logs fd0ac55645a0
   374  apt install docker.io -y
   375  clear
   376  docker version
+
+30th May
+---------
+104  docker version
+  105  docker volume ls
+  106  docker volume create demo-vol
+  107  docker volume ls
+  108  cd /var/lib/docker/volumes/
+  109  ls -l
+  110  pwd
+  111  df -h
+  112  cd ~
+  113  clear
+  114  docker ps
+  115  docker run -itd --mount source=demo-vol,target=/usr/local/apache2/htdocs --name web-cont -p 82:80 httpd
+  116  docker ps
+  117  docker volume ls
+  118  cd /var/lib/docker/volumes/demo-vol/_data/
+  119  ls -l
+  120  cat index.html
+  121  vi index1.html
+  122  ls -l
+  123  docker run -itd --mount source=demo-vol,target=/usr/local/apache2/htdocs --name web-cont2 -p 83:80 httpd
+  124  docker ps
+  125  docker rm -f 200eab649f4c
+  126  docker ps
+  127  cd ~
+  128  docker images
