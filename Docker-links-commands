@@ -19,8 +19,12 @@ https://docs.docker.com/reference/cli/docker/container/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 https://docs.docker.com/build/building/multi-stage/
-https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
+
+Docker-compose
 https://www.baeldung.com/ops/?s=docker+compose
+
+Restart Policy:
+https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
 
 
 Examples
