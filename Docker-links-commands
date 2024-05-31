@@ -23,7 +23,11 @@ https://docs.docker.com/build/building/multi-stage/
 Examples
 https://github.com/komljen/dockerfile-examples/tree/master
 
-Docker-Compose
+Docker Network --> https://docs.docker.com/network/drivers/
+
+Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+https://docs.docker.com/compose/
+
 
 All about Docker & Docker-compose-->
 https://www.baeldung.com/ops/?s=docker+compose
@@ -31,13 +35,16 @@ https://www.baeldung.com/ops/?s=docker+compose
 Docker-compose Restart Policy:
 https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
 
-
-
-
-Docker Network --> https://docs.docker.com/network/drivers/
-
-Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
-https://docs.docker.com/compose/
+Installation:
+Install latest version of docker-compose:
+$ sudo apt remove docker-compose
+$ wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+$ chmod +x docker-compose-linux-x86_64
+$ sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+$ docker-compose --version
+Docker Compose version v2.24.1
+$ sudo docker-compose up
+# Things work
 
 MySQL --> https://www.w3schools.com/MySQL/default.asp
 
@@ -274,15 +281,7 @@ sudo su -
     5  clear
     6  docker-compose version
 
-Install latest version of docker-compose:
-$ sudo apt remove docker-compose
-$ wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
-$ chmod +x docker-compose-linux-x86_64
-$ sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
-$ docker-compose --version
-Docker Compose version v2.24.1
-$ sudo docker-compose up
-# Things work
+
 
 
 
