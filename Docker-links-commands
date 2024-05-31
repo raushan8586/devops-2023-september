@@ -27,6 +27,7 @@ Docker Network --> https://docs.docker.com/network/drivers/
 
 Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
 https://docs.docker.com/compose/
+https://docs.docker.com/compose/intro/history/#compose-file-format-versioning
 
 
 All about Docker & Docker-compose-->
