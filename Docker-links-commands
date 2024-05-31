@@ -374,3 +374,43 @@ docker logs fd0ac55645a0
   126  docker ps
   127  cd ~
   128  docker images
+
+-----------------------------
+140  docker-compose version
+  141  apt update -y
+  142  ls -l
+  143  mkdir project1
+  144  cd project1/
+  145  vi docker-compose.yaml
+  146  docker-compose version
+  147  wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+  148  ls -l
+  149  chmod +x docker-compose-linux-x86_64
+  150  sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+  151  docker-compose version
+  152  ls -l
+  153  clear
+  154  ls -l
+  155  docker-compose up -d
+  156  docker network ls
+  157  docker volume ls
+  158  docker ps
+  159  docker images
+  160  docker inspect wordpress
+  161  docker ps
+  162  docker exec -it 7944f87348b4 /bin/bash
+  163  docker ps
+  164  docker exec -it b70564da64b3 /bin/bash
+  165  docker ps
+  166  clear
+  167  docker ps
+  168  docker logs 7944f87348b4
+  169  docker ps
+  170  clear
+  171  docker ps
+  172  docker logs b70564da64b3
+  173  docker ps
+  174  docker-compose down
+  175  docker ps
+  176  docker-compose up -d
+  177  docker ps
