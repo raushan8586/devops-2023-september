@@ -198,7 +198,8 @@ Rebase --> When the feature branch needs to get updated (get all the commits) fr
 Go to the feature branch (b1)
 git rebase master
 
-merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
+merge -- additional commits from a feature branch to another feature branch --> syncing updates
+rebase -- local master to feature branch --> syncing updates
 
 Merge -->
 git merge src destination
@@ -484,3 +485,134 @@ git branch
   219  git log --oneline
   220  ls -l
   221  git show 480e521
+
+--------------------------------------------
+23rd May
+----------
+git log --oneline
+  230  ls -l
+  231  rm sample6.html
+  232  ls -l
+  233  git status
+  234  git restore sample6.html
+  235  git status
+  236  ls -l
+  237  git rm sample6.html
+  238  ls -l
+  239  git ls-files
+  240  git status
+  241  git restore --staged sample6.html
+  242  git ls-files
+  243  git status
+  244  git restore sample6.html
+  245  git status
+  246  ls -l
+  247  git log --oneline
+  248  git reset --soft b1e5fe6
+  249  git log --oneline
+  250  git status
+  251  ls -l
+  252  git ls-files
+  253  vi rock-demo.java
+  254  git add .
+  255  git commit -m "rock-demo.java added"
+  256  clear
+  257  ls -l
+  258  git log --oneline
+  259  git reset --soft b1e5fe6
+  260  git log --oneline
+  261  ls -l
+  262  git status
+  263* 
+  264  git status
+  265  git add .
+  266  git status
+  267  git commit -m "rock-demo.java added again"
+  268  git log --oneline
+  269  git reset --hard b1e5fe6
+  270  git status
+  271  ls -l
+  272  git ls-files
+  273  git log --oneline
+  274  clear
+  275  git log --graph --pretty=oneline
+  276  git branch
+  277  git log --oneline
+  278  git checkout master
+  279  git log --oneline
+  280  git merge b3 master
+  281  git log --oneline
+  282  git remote -v
+  283  git pull origin master
+  284  git log --graph --pretty=oneline
+  285  git remote -v
+  286  git branch
+  287  git log --oneline
+  288  git checkout -b b4 master
+  289  git log --oneline
+  290  vi test.java
+  291  git add .
+  292  git commit -m "b4-1st-commit"
+  293  git checkout b3
+  294  vi test.java
+  295  git add .
+  296  git commit -m "b3-commit-test.java"
+  297  git merge b4 b3
+  298  git status
+  299  vi test.java
+  300  git status
+  301  git add .
+  302  git status
+  303  git commit -m "merge-conflict-resolved"
+  304  git status
+  305  git log --graph -- pretty=oneline
+  306  git log --graph --pretty=oneline
+  307  git log
+
+-----------------------------------------------
+24th May
+
+ 314  vi code1-file.java
+  315  vi code2-file.java
+  316  git status
+  317  ls -l
+  318  git branch
+  319  git checkout b2
+  320  git status
+  321  git checkout b3
+  322  git status
+  323  ls -l
+  324  git add .
+  325  git commit -m "code-files-added"
+  326  git status
+  327  vi code1-file.java 
+  328  vi code2-file.java 
+  329  git status
+  330  git stash list
+  331  git stash
+  332  git status
+  333  git stash list
+  334  git show stash@{0}
+  335  git stash pop stash@{0}
+  336  git status
+  337  git stash -p
+  338  git status
+  339  git stash list
+  340  git show stash@{0}
+  341  git add .
+  342  git commit -m "code2-file.java"
+  343  git status
+  344  git stash list
+  345  git stash clear
+  346  git stash list
+  347  vi code1-file.java 
+  348  git stash list
+  349  git status
+  350  git stash
+  351  git stash list
+  352  vi code2-file.java 
+  353  git status
+  354  git stash
+  355  git stash list
+  356  git stash drop stash@{1}
+  357  git stash list

@@ -1,4 +1,5 @@
 Installation:
+To be a root user -->
 sudo su -
       1  apt update -y
     2  clear
@@ -17,10 +18,40 @@ Docker Run Command:
 https://docs.docker.com/reference/cli/docker/container/run/
 
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/build/building/multi-stage/
+
+Examples
+https://github.com/komljen/dockerfile-examples/tree/master
 
 Docker Network --> https://docs.docker.com/network/drivers/
 
 Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+https://docs.docker.com/compose/
+https://docs.docker.com/compose/intro/history/#compose-file-format-versioning
+
+Resources for a container:
+https://stackoverflow.com/questions/42345235/how-to-specify-memory-cpu-limit-in-docker-compose-version-3
+
+
+All about Docker & Docker-compose-->
+https://www.baeldung.com/ops/?s=docker+compose
+
+Docker-compose Restart Policy:
+https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
+
+https://docs.docker.com/compose/samples-for-compose/
+
+Installation:
+Install latest version of docker-compose: https://github.com/docker/compose/releases/
+$ sudo apt remove docker-compose --> optional, in case, you need to remove docker-compose from ubuntu VM
+
+$ wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+$ chmod +x docker-compose-linux-x86_64
+$ sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+$ docker-compose --version
+Docker Compose version v2.24.1
+$ sudo docker-compose up
+# Things work
 
 MySQL --> https://www.w3schools.com/MySQL/default.asp
 
@@ -257,15 +288,7 @@ sudo su -
     5  clear
     6  docker-compose version
 
-Install latest version of docker-compose:
-$ sudo apt remove docker-compose
-$ wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
-$ chmod +x docker-compose-linux-x86_64
-$ sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
-$ docker-compose --version
-Docker Compose version v2.24.1
-$ sudo docker-compose up
-# Things work
+
 
 
 
@@ -305,3 +328,49 @@ docker logs fd0ac55645a0
    41  clear
    42  docker ps
    43  docker logs 95f620e1df7c
+
+
+
+24th May
+------------
+364  lsof -i -P -n | grep LISTEN
+  365  apt update -y
+  366  clear
+  367  apt install apache2 -y
+  368  lsof -i -P -n | grep LISTEN
+  369  cat /var/www/html/
+  370  cd /var/www/html/
+  371  ls -l
+  372  vi raushan-page.html
+  373  docker version
+  374  apt install docker.io -y
+  375  clear
+  376  docker version
+
+30th May
+---------
+104  docker version
+  105  docker volume ls
+  106  docker volume create demo-vol
+  107  docker volume ls
+  108  cd /var/lib/docker/volumes/
+  109  ls -l
+  110  pwd
+  111  df -h
+  112  cd ~
+  113  clear
+  114  docker ps
+  115  docker run -itd --mount source=demo-vol,target=/usr/local/apache2/htdocs --name web-cont -p 82:80 httpd
+  116  docker ps
+  117  docker volume ls
+  118  cd /var/lib/docker/volumes/demo-vol/_data/
+  119  ls -l
+  120  cat index.html
+  121  vi index1.html
+  122  ls -l
+  123  docker run -itd --mount source=demo-vol,target=/usr/local/apache2/htdocs --name web-cont2 -p 83:80 httpd
+  124  docker ps
+  125  docker rm -f 200eab649f4c
+  126  docker ps
+  127  cd ~
+  128  docker images
