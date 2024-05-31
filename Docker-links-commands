@@ -29,6 +29,9 @@ Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
 https://docs.docker.com/compose/
 https://docs.docker.com/compose/intro/history/#compose-file-format-versioning
 
+Resources for a container:
+https://stackoverflow.com/questions/42345235/how-to-specify-memory-cpu-limit-in-docker-compose-version-3
+
 
 All about Docker & Docker-compose-->
 https://www.baeldung.com/ops/?s=docker+compose
