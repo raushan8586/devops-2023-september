@@ -36,6 +36,8 @@ https://www.baeldung.com/ops/?s=docker+compose
 Docker-compose Restart Policy:
 https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
 
+https://docs.docker.com/compose/samples-for-compose/
+
 Installation:
 Install latest version of docker-compose: https://github.com/docker/compose/releases/
 $ sudo apt remove docker-compose --> optional, in case, you need to remove docker-compose from ubuntu VM
