@@ -4,7 +4,7 @@ eksctl create cluster --name=eksdemo1   --> Master node (HA) + 1 Nodegroup (2 wo
 
 Above 2 commands will create a kubernetes cluster --> Master Node (HA) + 1 Node Group (2 worker nodes)
 
-eksctl create cluster --name=eksdemo2 --without-nodegroup
+eksctl create cluster --name=eksdemo2 --without-nodegroup   --> Master Node (HA) / Control Plane
 
 eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo2 --approve
 
