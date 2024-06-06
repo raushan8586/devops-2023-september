@@ -25,8 +25,8 @@ Ingress --> path/url based  routing
 
 2. Ingress Resource--> Rules to re-direct the request to the services
 
-abc1234.com/path1 --> service1 --> Micro-services1 --> Container1
-abc1234.com/path2 --> service2 --> Micro-services2 --> Container2
+abc1234.com/path1 --> service1 --> Micro-services1 --> Pod1
+abc1234.com/path2 --> service2 --> Micro-services2 --> Pod2
 
 1. Install Nginx Controller, which creates the LB as well
 2. Deploy ms1 with svc1

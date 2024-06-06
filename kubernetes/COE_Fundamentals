@@ -11,9 +11,9 @@ auto-scheduling, auto-clustering
 
 
 Kubernetes Objects:
-1. Pods --> container (M1)
-2. Deployment (m1d)
-3. ReplicaSet (m1r)
+1. Pods --> container
+2. ReplicaSet --> To maintain a stable number of replica pods --> auto-healing
+3. Deployment --> deploys replica of pods without downtime
 4. services --> to expose the pods (front-end, back-end)
 
 Kubernetes Cloud Managed services:

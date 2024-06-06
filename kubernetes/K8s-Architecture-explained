@@ -1,0 +1,7 @@
+API Server ---> Gatekeeper
+Scheduler --> schedules K8s objects on nodes
+Cointrooler Manager --> Overall health of the cluster
+etcd --> database --> lighweight, centralized, key-value pair DB
+
+Kubelet --> makes sure containers are runnig healthy
+kube-proxy --> core netwrking component in the cluster

@@ -4,6 +4,9 @@
 3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
 --> https://eksctl.io/installation/
 
+Logs:
+https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/
+
 
 AWS Documentation --> https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
 
