@@ -12,3 +12,8 @@ https://github.com/jenkins-docs/simple-java-maven-app/blob/master/jenkins/Jenkin
 
 https://devopspilot.com/content/jenkins/tutorials/pipeline/04-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat.html
 
+
+Declerative Vs Scripted pipeline
+---------------------------------
+https://www.baeldung.com/ops/jenkins-scripted-vs-declarative-pipelines
+
