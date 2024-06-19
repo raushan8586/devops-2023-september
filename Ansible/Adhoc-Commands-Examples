@@ -1,0 +1,117 @@
+https://www.google.com/search?q=ansible+adhoc+command+to+run+shell+script&rlz=1C1RLNS_enIN1019IN1019&oq=ansibel+adhoc+commands+to+run+a+she&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMggIAhAAGBYYHjINCAMQABiGAxiABBiKBTIKCAQQABiiBBiJBTIKCAUQABiABBiiBDIKCAYQABiABBiiBNIBCTE1OTQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#ip=1
+
+To run a shell script using an Ansible ad-hoc command, you can use the following syntax:
+Code
+
+ansible all -m shell -a "bash /path/to/script.sh"
+This command will run the script named script.sh on all hosts in your inventory file.
+You can also use the -b option to become the sudo user before executing the command:
+Code
+
+ansible all -b -m shell -a "bash /path/to/script.sh"
+This command will run the script named script.sh as the sudo user on all hosts in your inventory file.
+Here are some examples of how to use Ansible ad-hoc commands to run shell scripts:
+Run a script to install a package:
+Code
+
+ansible all -m shell -a "apt install nginx"
+Run a script to start a service:
+Code
+
+ansible all -m shell -a "systemctl start nginx"
+Run a script to stop a service:
+Code
+
+ansible all -m shell -a "systemctl stop nginx"
+Run a script to restart a service:
+Code
+
+ansible all -m shell -a "systemctl restart nginx"
+Run a script to check the status of a service:
+Code
+
+ansible all -m shell -a "systemctl status nginx"
+Run a script to get the version of a package:
+Code
+
+ansible all -m shell -a "dpkg --status nginx"
+Run a script to get the uptime of a host:
+Code
+
+ansible all -m shell -a "uptime"
+Run a script to get the free memory on a host:
+Code
+
+ansible all -m shell -a "free -m"
+Run a script to get the CPU usage on a host:
+Code
+
+ansible all -m shell -a "mpstat"
+Run a script to get the disk usage on a host:
+Code
+
+ansible all -m shell -a "df -h"
+Run a script to get the network interfaces on a host:
+Code
+
+ansible all -m shell -a "ifconfig"
+Run a script to get the routing table on a host:
+Code
+
+ansible all -m shell -a "route -n"
+Run a script to get the DNS servers on a host:
+Code
+
+ansible all -m shell -a "cat /etc/resolv.conf"
+Run a script to get the hostname of a host:
+Code
+
+ansible all -m shell -a "hostname"
+Run a script to get the IP address of a host:
+Code
+
+ansible all -m shell -a "hostname -I"
+Run a script to get the MAC address of a host:
+Code
+
+ansible all -m shell -a "ifconfig | grep ether"
+Run a script to get the operating system of a host:
+Code
+
+ansible all -m shell -a "cat /etc/os-release"
+Run a script to get the kernel version of a host:
+Code
+
+ansible all -m shell -a "uname -r"
+Run a script to get the architecture of a host:
+Code
+
+ansible all -m shell -a "uname -m"
+Run a script to get the number of CPUs on a host:
+Code
+
+ansible all -m shell -a "nproc"
+Run a script to get the amount of RAM on a host:
+Code
+
+ansible all -m shell -a "free -m | grep Mem"
+Run a script to get the amount of disk space on a host:
+Code
+
+ansible all -m shell -a "df -h | grep /dev/sda"
+Run a script to get the amount of free disk space on a host:
+Code
+
+ansible all -m shell -a "df -h | grep /dev/sda | awk '{print $4}'"
+Run a script to get the amount of used disk space on a host:
+Code
+
+ansible all -m shell -a "df -h | grep /dev/sda | awk '{print $3}'"
+Run a script to get the amount of inodes on a host:
+Code
+
+ansible all -m shell -a "df -i | grep /dev/sda"
+Run a script to get the amount of free inodes on a host:
+Code
+
+ansible all -m shell -a "df -i | grep /dev/sda | awk '{print $5}'"
