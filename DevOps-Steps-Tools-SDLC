@@ -7,7 +7,7 @@ Job5: Performance Testing --> JMeter + Jenkins
 Job6: Security Testing --> (Fortify, SonarQube) + Jenkins
 Job7: UAT Testing --> User Acceptance Testing 
 
-Job8 : Deploy the code to Producction --> (DOCKER, KUBERNETES, ANSIBLE) + Jenkins
+Job8 : Deploy the code to Production --> (DOCKER, KUBERNETES, ANSIBLE) + Jenkins
 
 Monitoring (24*7) , Feedback
 
