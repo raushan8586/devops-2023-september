@@ -13,8 +13,9 @@ Monitoring (24*7) , Feedback
 
 Objective --> 
 
-Continuous Development
-Continuous Testing
-Continuous Integration
-Continuous Deployment
-Continuous Monitoring/Feedback
+DevOps Lifecycles:
+1. Continuous Development
+2. Continuous Testing
+3. Continuous Integration
+4. Continuous Deployment
+5. Continuous Monitoring/Feedback
