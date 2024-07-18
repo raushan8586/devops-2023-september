@@ -1,7 +1,7 @@
 Job1 : GIT/GITHUB + Jenkins --> uploaded the code
 
 Job2 : MAVEN + JENKINS --> build the code (compile + unit test (junit) + Package) --> .jar / .war / .ear --> artifacts
-Job3:  the code to QA env --> (DOCKER, KUBERNETES, ANSIBLE) + Jenkins
+Job3:  Deployment the code to QA env --> (DOCKER, KUBERNETES, ANSIBLE) + Jenkins
 Job4: Functional/Automation Testing (SIT) --> (Selenium, testng) + Jenkins
 Job5: Performance Testing --> JMeter + Jenkins
 Job6: Security Testing --> (Fortify, SonarQube) + Jenkins
