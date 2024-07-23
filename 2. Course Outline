@@ -2,7 +2,7 @@
 Role of a DevOps Engineer in a company: 
 1. Deployment of Code in various env --> CI/CD Pipeline Automation--> Jenkins, maven, Docker, Kubernetes, Ansible, Git/GitHub
 2. Managing infrastructure --> Cloud (AWS, Azure , GCP) --> Terraform
-3. Setup Monitoring --> to know the health of the infra/application --> Prometheus/Grafana, ELK
+3. Setup Monitoring and Dashboards --> to know the health of the infra/application --> Prometheus/Grafana, ELK
 
 Automation --> scripting/Coding knowledge
 
