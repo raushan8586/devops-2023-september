@@ -109,3 +109,103 @@
   119  git remote -v
   120  git status
   121  git push origin master
+
+
+
+-----------------------
+25th July
+
+1  apt update -y
+    2  clear
+    3  pwd
+    4  mkdir project1
+    5  cd project1/
+    6  pwd
+    7  git -version
+    8  git version
+    9  clear
+   10  pwd
+   11  ls -la
+   12  ls -l
+   13  ls -la
+   14  git init
+   15  ls -la
+   16  vi test1
+   17  cat test1
+   18  ls -l
+   19  pwd
+   20  git add test1
+   21  git commit -m "1st commit"
+   22  git remote -v
+   23  git remote add origin https://github.com/raushan8586/devops-july-repo.git
+   24  git remote -v
+   25  exit
+   26  pwd
+   27  clear
+   28  ls -l
+   29  git clone https://github.com/raushan8586/devops-2023-september.git
+   30  ls -l
+   31  cd devops-2023-september/
+   32  ls -l
+   33  clear
+   34  ls -la
+   35  cd ..
+   36  ls -l
+   37  cd project1/
+   38  clear
+   39  ls -l
+   40  ls -la
+   41  ls -l
+   42  git status
+   43  git log
+   44  git config --global user.email "raushan8586.kumar@gmail.com"
+   45  git config --global user.name "Raushan Kumar"
+   46  vi test2.java
+   47  ls -l
+   48  git status
+   49  git add test2.java
+   50  git status
+   51  git commit -m "worked on this bug"
+   52  git status
+   53  ls -l
+   54  git ls-files
+   55  git status
+   56  git log
+   57  git remote -v
+   58  git push origin master
+   59  clear
+   60  git log
+   61  git log --oneline
+   62  git show 7496bab
+   63  git show 63780ae
+   64  clear
+   65  git log --oneline
+   66  vi tes3.java
+   67  git add tes3.java
+   68  git commit -m "3rd commit"
+   69  git log --oneline
+   70  git push origin master
+   71  git log --oneline
+   72  git branch
+   73  git pull origin master
+   74  git log --oneline
+   75  git branch b1 master
+   76  git branch
+   77  git checkout b1
+   78  git branch
+   79  git log --oneline
+   80  vi feature1.java
+   81  git status
+   82  git add .
+   83  git commit -m "d1-1st-commit"
+   84  git push origin b1
+   85  clear
+   86  git log --oneline
+   87  git branch
+   88  git status
+   89  git checkout master
+   90  git branch b2 master
+   91  git pull origin master
+   92  ls -l
+   93  git checkout b2
+   94  git rebase master
