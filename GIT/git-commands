@@ -209,3 +209,63 @@
    92  ls -l
    93  git checkout b2
    94  git rebase master
+
+
+26th July
+
+114  vi app1.log
+  115  vi error.log
+  116  Vi ReadMe
+  117  vi ReadMe
+  118  git status
+  119  vi sample-app.java
+  120  git status
+  121  git add sample-app.java
+  122  git status
+  123  git commit -m "sample-code.java"
+  124  git status
+  125  git checkout b1
+  126  git status
+  127  vi .gitignore
+  128  git status
+  129  git add .
+  130  git commit -m "git-ignore-added"
+  131  git status
+  132  ls -l
+  133  git checkout b2
+  134  git log --oneline
+  135  git show 18af4fc
+  136  git log --oneline
+  137  git revert 18af4fc
+  138  git log --oneline
+  139  git show 819dba5
+  140  ls -l
+  141  git log --oneline
+  142  ls -l
+  143  rm imp-feature
+  144  ls -l
+  145  git ls-files
+  146  git status
+  147  git restore imp-feature
+  148  ls -l
+  149  git status
+  150  ls -l
+  151  vi .gitignore
+  152  ls -l
+  153  git status
+  154  git add .
+  155  git commit -m ".git-ignore-added-b2"
+  156  git status
+  157  ls -l
+  158  git rm imp-feature
+  159  ls -l
+  160  git status
+  161  git restore --staged imp-feature
+  162  git status
+  163  git restore imp-feature
+  164  git status
+  165  ls -l
+  166  git log --oneline
+  167  git reset --hard 2bde1ec
+  168  git log --oneline
+  169  git status
