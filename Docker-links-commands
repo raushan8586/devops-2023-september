@@ -22,6 +22,8 @@ https://docs.docker.com/reference/cli/docker/container/run/
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 https://docs.docker.com/build/building/multi-stage/
 
+*COPY vs ADD, CMD vs ENTRYPOINT
+
 Examples
 https://github.com/komljen/dockerfile-examples/tree/master
 
