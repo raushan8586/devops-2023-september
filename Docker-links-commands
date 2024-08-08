@@ -158,6 +158,10 @@ docker volume ls
   100  cd project1/
   101  ls -l
 
+70  docker login
+   71  docker image tag ubuntu1:latest raushan8586/devops-aug-2024:ubuntu1
+   72  docker image push raushan8586/devops-aug-2024:ubuntu1
+
 
 
 103  cd ..
