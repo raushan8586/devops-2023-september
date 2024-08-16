@@ -18,10 +18,10 @@ eksctl get cluster
 
 eksctl get nodegroup --cluster=eksdemo1
 
-eksctl delete nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1 
+eksctl delete nodegroup --cluster=eksdemo2 --name=eksdemo2-ng
 ---> Use Cloudformation as well if it is getting delayed
 
-eksctl delete cluster eksdemo1
+eksctl delete cluster eksdemo2
 
 ---------------------------------------------------------------------------------
 
