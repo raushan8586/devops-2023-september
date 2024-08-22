@@ -109,3 +109,163 @@
   119  git remote -v
   120  git status
   121  git push origin master
+
+
+
+-----------------------
+25th July
+
+1  apt update -y
+    2  clear
+    3  pwd
+    4  mkdir project1
+    5  cd project1/
+    6  pwd
+    7  git -version
+    8  git version
+    9  clear
+   10  pwd
+   11  ls -la
+   12  ls -l
+   13  ls -la
+   14  git init
+   15  ls -la
+   16  vi test1
+   17  cat test1
+   18  ls -l
+   19  pwd
+   20  git add test1
+   21  git commit -m "1st commit"
+   22  git remote -v
+   23  git remote add origin https://github.com/raushan8586/devops-july-repo.git
+   24  git remote -v
+   25  exit
+   26  pwd
+   27  clear
+   28  ls -l
+   29  git clone https://github.com/raushan8586/devops-2023-september.git
+   30  ls -l
+   31  cd devops-2023-september/
+   32  ls -l
+   33  clear
+   34  ls -la
+   35  cd ..
+   36  ls -l
+   37  cd project1/
+   38  clear
+   39  ls -l
+   40  ls -la
+   41  ls -l
+   42  git status
+   43  git log
+   44  git config --global user.email "raushan8586.kumar@gmail.com"
+   45  git config --global user.name "Raushan Kumar"
+   46  vi test2.java
+   47  ls -l
+   48  git status
+   49  git add test2.java
+   50  git status
+   51  git commit -m "worked on this bug"
+   52  git status
+   53  ls -l
+   54  git ls-files
+   55  git status
+   56  git log
+   57  git remote -v
+   58  git push origin master
+   59  clear
+   60  git log
+   61  git log --oneline
+   62  git show 7496bab
+   63  git show 63780ae
+   64  clear
+   65  git log --oneline
+   66  vi tes3.java
+   67  git add tes3.java
+   68  git commit -m "3rd commit"
+   69  git log --oneline
+   70  git push origin master
+   71  git log --oneline
+   72  git branch
+   73  git pull origin master
+   74  git log --oneline
+   75  git branch b1 master
+   76  git branch
+   77  git checkout b1
+   78  git branch
+   79  git log --oneline
+   80  vi feature1.java
+   81  git status
+   82  git add .
+   83  git commit -m "d1-1st-commit"
+   84  git push origin b1
+   85  clear
+   86  git log --oneline
+   87  git branch
+   88  git status
+   89  git checkout master
+   90  git branch b2 master
+   91  git pull origin master
+   92  ls -l
+   93  git checkout b2
+   94  git rebase master
+
+
+26th July
+
+114  vi app1.log
+  115  vi error.log
+  116  Vi ReadMe
+  117  vi ReadMe
+  118  git status
+  119  vi sample-app.java
+  120  git status
+  121  git add sample-app.java
+  122  git status
+  123  git commit -m "sample-code.java"
+  124  git status
+  125  git checkout b1
+  126  git status
+  127  vi .gitignore
+  128  git status
+  129  git add .
+  130  git commit -m "git-ignore-added"
+  131  git status
+  132  ls -l
+  133  git checkout b2
+  134  git log --oneline
+  135  git show 18af4fc
+  136  git log --oneline
+  137  git revert 18af4fc
+  138  git log --oneline
+  139  git show 819dba5
+  140  ls -l
+  141  git log --oneline
+  142  ls -l
+  143  rm imp-feature
+  144  ls -l
+  145  git ls-files
+  146  git status
+  147  git restore imp-feature
+  148  ls -l
+  149  git status
+  150  ls -l
+  151  vi .gitignore
+  152  ls -l
+  153  git status
+  154  git add .
+  155  git commit -m ".git-ignore-added-b2"
+  156  git status
+  157  ls -l
+  158  git rm imp-feature
+  159  ls -l
+  160  git status
+  161  git restore --staged imp-feature
+  162  git status
+  163  git restore imp-feature
+  164  git status
+  165  ls -l
+  166  git log --oneline
+  167  git reset --hard 2bde1ec
+  168  git log --oneline
+  169  git status

@@ -198,7 +198,8 @@ Rebase --> When the feature branch needs to get updated (get all the commits) fr
 Go to the feature branch (b1)
 git rebase master
 
-merge -- feature branch to local master, rebase -- local master to feature branch --> syncing updates
+merge -- additional commits from a feature branch to another feature branch --> syncing updates
+rebase -- local master to feature branch --> syncing updates
 
 Merge -->
 git merge src destination
@@ -313,3 +314,305 @@ Conflict Scenario: --> Parallel Development + File Name same --> Needs to be res
    31  git stash list
 
 
+-------------------------------------------------------------
+
+17th May --> git commands
+
+root@ip-172-31-9-149:~/project1# history
+    1  apt update -y
+    2  clear
+    3  git --version
+    4  ls -l
+    5  pwd
+    6  git clone https://github.com/raushan8586/devops-2023-september.git
+    7  history
+    8  ls -l
+    9  cd devops-2023-september/
+   10  ls -l
+   11  ls
+   12  ls -l
+   13  ls -lrt
+   14  clear
+   15  ls -l
+   16  clear
+   17  git log --oneline
+   18  pwd
+   19  ls -l
+   20  clear
+   21  git log --oneline
+   22  ls -l
+   23  cd ..
+   24  clear
+   25  ls -l
+   26  mkdir project1
+   27  cd project1/
+   28  pwd
+   29  ls -la
+   30  cd ../devops-2023-september/
+   31  ls -la
+   32  cd ../project1/
+   33  clear
+   34  ls -la
+   35  git init
+   36  ls -la
+   37  touch sample1.txt
+   38  vi sample1.txt 
+   39  car sample1.txt 
+   40  clear
+   41  ls -l
+   42  cat sample1.txt 
+   43  vi sample.java
+   44  cat sample.java 
+   45  ls -l
+   46  ls -la
+   47  git status
+   48  cd ..
+   49  mkdir project2
+   50  cd project2
+   51  vi demo.txt
+   52  cat demo.txt 
+   53  git status
+   54  cd ../project1/
+   55  clear
+   56  git status
+   57  pwd
+   58  git status
+   59  git log --oneline
+   60  git add sample.java sample1.txt
+   61  ls -l
+   62  clear'
+   63  clear
+   64  git status
+   65  git commit -m "1st-commit"
+   66  git log --oneline
+   67  git log
+   68  git remote -v
+   69  git remote add origin https://github.com/raushan8586/repo-demo.git
+   70  clear
+   71  git remote -v
+   72  git status
+   73  git push origin master
+   74  clear
+   75  ls -l
+   76  vi demo.java
+   77  cat demo.java 
+   78  git status
+   79  ls -l
+   80  git add demo.java 
+   81  git status
+   82  ls -l
+   83  git ls-files
+   84  git commit -m "2nd-commit"
+   85  git status
+   86  ls -l
+   87  git ls-files
+   88  clear
+   89  ls -l
+   90  git ls-files
+   91  git status
+   92  git remote -v
+   93  git push origin master
+ 96  git config --global user.email "raushan8586.kumar@gmail.com"
+   97  git config --global user.name "Raushan Kumar"
+
+----------------------------------------------------------------------------------------------
+21st May 2024
+  138  git status
+  139  git branch b1 master
+  140  git branch
+  141  git log --oneline
+  142  git show 107fd7b
+  143  git checkout b1
+  144  git branch
+  143  git checkout b1
+  144  git branch
+  145  git log --oneline
+  146  git push origin b1
+----------------------------------------------------------------------------------------------------------
+
+22nd May 2024
+git branch
+  169  git checkout -b b2 master
+  170  git branch
+  171  git log --oneline
+  172  git checkout master
+  173  git log --oneline
+  174  git branch
+  175  ls -l
+  176  git pull origin master
+  177  git log --oneline
+  178  git checkout b2
+  179  git rebase master
+  180  git log --oneline
+  181  git checkout b2
+  182  vi b2_file1.java
+  183  git add .
+  184  git commit -m "b2_1st-commit"
+  185  git push origin b2
+  186  git branch
+  187  git checkout -b b3 master
+  188  git log --oneline
+  189  git checkout b2
+  190  git log --oneline
+  191  git checkout b3
+  192  git merge b2 b3
+  193  git log --oneline
+  194  git branch
+  195  git log --oneline
+  196  vi app1.log
+  197  vi readMe
+  198  ls -l
+  199  git status
+  200  vi sample6.html
+  201  git status
+  202  git add sample6.html 
+  203  git status
+  204  git commit -m "sample6.java-commit"
+  205  git status
+  206  vi .gitignore
+  207  git status
+  208  git add .gitignore
+  209  git commit -m "git-ignore-file-added"
+  210  git status
+  211  ls -l
+  212  git log --oneline
+  213  vi sample7.java
+  214  git add .
+  215  git commit -m "sample7.java-added"
+  216  git log --oneline
+  217  git show 445f58c
+  218  git revert 445f58c
+  219  git log --oneline
+  220  ls -l
+  221  git show 480e521
+
+--------------------------------------------
+23rd May
+----------
+git log --oneline
+  230  ls -l
+  231  rm sample6.html
+  232  ls -l
+  233  git status
+  234  git restore sample6.html
+  235  git status
+  236  ls -l
+  237  git rm sample6.html
+  238  ls -l
+  239  git ls-files
+  240  git status
+  241  git restore --staged sample6.html
+  242  git ls-files
+  243  git status
+  244  git restore sample6.html
+  245  git status
+  246  ls -l
+  247  git log --oneline
+  248  git reset --soft b1e5fe6
+  249  git log --oneline
+  250  git status
+  251  ls -l
+  252  git ls-files
+  253  vi rock-demo.java
+  254  git add .
+  255  git commit -m "rock-demo.java added"
+  256  clear
+  257  ls -l
+  258  git log --oneline
+  259  git reset --soft b1e5fe6
+  260  git log --oneline
+  261  ls -l
+  262  git status
+  263* 
+  264  git status
+  265  git add .
+  266  git status
+  267  git commit -m "rock-demo.java added again"
+  268  git log --oneline
+  269  git reset --hard b1e5fe6
+  270  git status
+  271  ls -l
+  272  git ls-files
+  273  git log --oneline
+  274  clear
+  275  git log --graph --pretty=oneline
+  276  git branch
+  277  git log --oneline
+  278  git checkout master
+  279  git log --oneline
+  280  git merge b3 master
+  281  git log --oneline
+  282  git remote -v
+  283  git pull origin master
+  284  git log --graph --pretty=oneline
+  285  git remote -v
+  286  git branch
+  287  git log --oneline
+  288  git checkout -b b4 master
+  289  git log --oneline
+  290  vi test.java
+  291  git add .
+  292  git commit -m "b4-1st-commit"
+  293  git checkout b3
+  294  vi test.java
+  295  git add .
+  296  git commit -m "b3-commit-test.java"
+  297  git merge b4 b3
+  298  git status
+  299  vi test.java
+  300  git status
+  301  git add .
+  302  git status
+  303  git commit -m "merge-conflict-resolved"
+  304  git status
+  305  git log --graph -- pretty=oneline
+  306  git log --graph --pretty=oneline
+  307  git log
+
+-----------------------------------------------
+24th May
+
+ 314  vi code1-file.java
+  315  vi code2-file.java
+  316  git status
+  317  ls -l
+  318  git branch
+  319  git checkout b2
+  320  git status
+  321  git checkout b3
+  322  git status
+  323  ls -l
+  324  git add .
+  325  git commit -m "code-files-added"
+  326  git status
+  327  vi code1-file.java 
+  328  vi code2-file.java 
+  329  git status
+  330  git stash list
+  331  git stash
+  332  git status
+  333  git stash list
+  334  git show stash@{0}
+  335  git stash pop stash@{0}
+  336  git status
+  337  git stash -p
+  338  git status
+  339  git stash list
+  340  git show stash@{0}
+  341  git add .
+  342  git commit -m "code2-file.java"
+  343  git status
+  344  git stash list
+  345  git stash clear
+  346  git stash list
+  347  vi code1-file.java 
+  348  git stash list
+  349  git status
+  350  git stash
+  351  git stash list
+  352  vi code2-file.java 
+  353  git status
+  354  git stash
+  355  git stash list
+  356  git stash drop stash@{1}
+  357  git stash list

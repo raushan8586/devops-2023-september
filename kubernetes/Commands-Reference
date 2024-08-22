@@ -1,10 +1,10 @@
-eksctl create cluster
+eksctl create cluster   --> Master node (HA) + 1 Nodegroup (2 worker nodes)
 
-eksctl create cluster --name=eksdemo1
+eksctl create cluster --name=eksdemo1   --> Master node (HA) + 1 Nodegroup (2 worker nodes)
 
 Above 2 commands will create a kubernetes cluster --> Master Node (HA) + 1 Node Group (2 worker nodes)
 
-eksctl create cluster --name=eksdemo2 --without-nodegroup
+eksctl create cluster --name=eksdemo2 --without-nodegroup   --> Master Node (HA) / Control Plane
 
 eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo2 --approve
 
@@ -12,13 +12,18 @@ eksctl create nodegroup --cluster=eksdemo2 --name=eksdemo2-ng --node-type=m5.lar
 
 # If you wish to provision default node-type, just skip this tag --node-type=t2.micro
 
+Delete your Cluster
+---------------------
 eksctl get cluster
 
 eksctl get nodegroup --cluster=eksdemo1
 
-eksctl delete nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1
+eksctl delete nodegroup --cluster=eksdemo2 --name=eksdemo2-ng
+---> Use Cloudformation as well if it is getting delayed
 
-eksctl delete cluster eksdemo1
+eksctl delete cluster eksdemo2
+
+---------------------------------------------------------------------------------
 
 kubectl create -f nodeport-service.yaml
 

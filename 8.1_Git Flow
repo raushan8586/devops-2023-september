@@ -1,8 +1,8 @@
-1. Master - gold copy of the application code
+1. Remote Master - gold copy of the application code
 2. Branched out of master - b1
 3. make changes to b1 with commits
 4. Push b1 commits to github b1
-5. b1 making pull request to merge to master
+5. b1 making pull request to merge to Remote master
 6. master reviewing/approving pull request. Master Github to be updated with b1 commits
 
 Next day b1 staritng the work
