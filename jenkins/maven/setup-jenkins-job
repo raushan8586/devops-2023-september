@@ -32,6 +32,9 @@ Note: use t2.medium instance type to install jenkins, particular to build mavan-
    40  clear
    41  ls -l
    42  wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
+
+wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz --> latest
+
    43  ls -l
    44  tar xvzf apache-maven-3.9.5-bin.tar.gz
    45  ls -l
