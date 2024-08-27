@@ -6,7 +6,7 @@ Continuous Monitoring --> why?
 Roles of a DevOps Engineer (Continuous Monitoring):
 1. Perform POC on the monitoring tools (POC --> Proof of Concept)
 2. setup/install the monitoring tool
-3. Creating Dashboards for metrics --> CPU, Memory Disk, Response time, status code, uptime
+3. Creating Dashboards for metrics --> CPU, Memory, Disk, Response time, status code, uptime
 4. Alerting
 
 Monitoring tools:
