@@ -37,7 +37,7 @@ ubuntu@ip-172-31-13-232:~/kibana-8.10.4/bin$ history
    14  ./kibana
    15  history
 
-Edit kibana.yml and change hostname with Private IP --> server.host: "172.31.13.232"
+Edit kibana.yml and change/uncomment hostname with Private IP --> server.host: "172.31.13.232"
 use the public IP in the browser though
 
 Note: Refresh the page. Don't wait long.
