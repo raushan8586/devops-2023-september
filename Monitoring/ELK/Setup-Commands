@@ -43,7 +43,7 @@ use the public IP in the browser though
 Note: Refresh the page. Don't wait long.
 
 3. Elastic Agent -->
-Login to Kibana --> add integrations --> search for Elastic Agent --> Download elastic-agent.yml --> edit it with elastic user and password.
+Login to Kibana --> add integrations --> search for Elastic Agent --> --> create api, which acts as credentials --> Download elastic-agent.yml 
 
 
 ubuntu@ip-172-31-13-232:~/elastic-agent-8.10.4-linux-x86_64$ history
