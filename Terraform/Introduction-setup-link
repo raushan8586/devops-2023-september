@@ -15,9 +15,9 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 https://code.visualstudio.com/download
 
 
-terraform init
-
 terraform refresh → Get you the latest state of the infrastructure
+
+terraform init
 
 terraform plan
 
