@@ -616,3 +616,110 @@ git log --oneline
   355  git stash list
   356  git stash drop stash@{1}
   357  git stash list
+
+
+------------------------------------------------------
+devops-nov-2024
+-------------------------------------------------------
+
+1  apt update -y
+    2  git version
+    3  ls -l
+    4  git clone https://github.com/raushan8586/devops-19nov-2024.git
+    5  ls -l
+    6  cd devops-19nov-2024/
+    7  ls -l
+    8  git branch
+    9  cd ..
+   10  ls -l
+   11  cd devops-19nov-2024/
+   12  ls -l
+   13  ls -la
+   14  ls -l
+   15  cd ..
+   16  ls -l
+   17  mkdir project1
+   18  cd project1/
+   19  ls -la
+   20  git init
+   21  ls -la
+   22  git branch
+   23  ls -la
+   24  cd ..
+   25  mkdir project2
+   26  ls -l
+   27  cd project1
+   28  ls -l
+   29  ls -la
+   30  vi file1
+   31  cat file1 
+   32  ls -l
+   33  pwd
+   34  git status
+   35  cd ../project2/
+   36  vi file1
+   37  ls -l
+   38  ls -la
+   39  git status
+   40  cd ../project1/
+   41  git status
+   42  ls -l
+   43  git add file1
+   44  git status
+   45  git log
+   46  git commit -m "1st commit"
+   47  git status
+   48  ls -l
+   49  git ls-files
+   50  git log
+   51  vi file2
+   52  ls -l
+   53  git ls-files
+   54  git status
+   55  git add file2
+   56  git status
+   57  git commit -m "2nd-commit"
+   58  git status
+   59  git ls-files
+   60  git log
+   61  ls -l
+   62  cd project
+   63  cd project1/
+   64  ls -l
+   65  ls -la
+   66  vi file3
+   67  ls -l
+   68  git ls-files
+   69  git status
+   70  git add file3
+   71  git status
+   72  git commit -m "3rd commit"
+   73  git log
+   74  git config --global user.email "raushan8586.kumar@gmail.com"
+   75  git config --global user.name "Raushan Kumar"
+   76  vi file4
+   77  vi file5
+   78  git status
+   79  git add .
+   80  git commit -m "4th commit"
+   81  git log
+   82  git branch
+   83  git status
+   84  git log --one-line
+   85  git log -oneline
+   86  git log --oneline
+   87  git show dd1b59b
+   88  git remote -v
+   89  cd ..
+   90  ls -l
+   91  cd devops-19nov-2024/
+   92  git remote -v
+   93  cd ../project1/
+   94  ls -l
+   95  git remote -v
+   96  git status
+   97  git remote add origin https://github.com/raushan8586/devops-nov-2024.git
+   98  git remote -v
+   99  git push origin master
+  100  git log --oneline
+  101  history
