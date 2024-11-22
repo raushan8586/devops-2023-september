@@ -722,4 +722,75 @@ devops-nov-2024
    98  git remote -v
    99  git push origin master
   100  git log --oneline
-  101  history
+
+102  git branch
+  103  ls -l
+  104  cd project
+  105  cd project1/
+  106  ls -l
+  107  git log --oneline
+  108  git status
+  109  git branch
+  110  git remote -v
+  111  git log --oneline
+  112  git pull
+  113  git log --oneline
+  114  git pull origin master
+  115  git log --oneline
+  116  git branch b1 master
+  117  git branch
+  118  git checkout b1
+  119  git branch
+  120  vi feature1
+  121  git add .
+  122  git commit -m "feature1-d1-commit"
+  123  git log --oneline
+  124  git remote -v
+  125  git push origin b1
+  126  git branch
+  127  git log --oneline
+  128  git checkout master
+  129  git pull origin master
+  130  git log --oneline
+  131  git branch
+  132  git pull origin master
+  133  git log --oneline
+  134  git checkout b1
+  135  git log --oneline
+  136  git rebase master
+  137  git log --oneline
+  138  git branch
+  139  git checkout -b b2 master
+  140  git branch
+  141  git log --oneline
+  142  ls -l
+  143  vi app1.log
+  144  vi ReadMe
+  145  vi feature3
+  146  git status
+  147  vi .gitignore
+  148  git status
+  149  git add .
+  150  git commit -m "feature3-gitignore-file-added"
+  151  git status
+  152  ls -l
+  153  git ls-files
+  154  git push origin b2
+  155  vi feature4
+  156  git add .
+  157  git commit -m "feature4 added"
+  158  git log --oneline
+  159  git show acc64ae
+  160  git revert acc64ae
+  161  git log --oneline
+  162  git show 530fcf8
+  163  git log --oneline
+  164  ls -l
+  165  git revert 530fcf8
+  166  git log --oneline
+  167  ls -l
+  168  rm file1
+  169  ls -l
+  170  git status
+  171  git restore file1
+  172  ls -l
