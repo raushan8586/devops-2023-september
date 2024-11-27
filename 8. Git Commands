@@ -794,3 +794,133 @@ devops-nov-2024
   170  git status
   171  git restore file1
   172  ls -l
+
+ls -l
+  175  cd project1
+  176  ls -l
+  177  pwd
+  178  ls -la
+  179  git status
+  180  git branch
+  181  git log --oneline
+  182  ls -l
+  183  vi feature5
+  184  ls -l
+  185  cd project1/
+  186  pwd
+  187  ls -l
+  188  git status
+  189  vi feature5
+  190  git add .
+  191  git commit -m "feature5 added"
+  192  git log --oneline
+  193  ls -l
+  194  git ls-files
+  195  git status
+  196  ls -l
+  197  git log --oneline
+  198  rm feature5
+  199  ls -l
+  200  git status
+  201  git ls-files
+  202  git restore feature5
+  203  ls -l
+  204  git status
+  205  git log --oneline
+  206  git revert 9ecbac6
+  207  git log --oneline
+  208  ls -l
+  209  git ls-files
+  210  git log --oneline
+  211  git checkout master
+  212  git log --oneline
+  213  git checkout b1
+  214  git log --oneline
+  215  git checkout b2
+  216  git log --oneline
+  217  git reset --hard acc64ae
+  218  git log --oneline
+  219  git status
+  220  ls -l
+  221  git log --oneline
+  222  vi feature5
+  223  git add .
+  224  git commit -m "feature5 added"
+  225  vi feature4
+  226  vi feature5
+  227  git status
+  228  ls -l
+  229  git status
+  230  git stash list
+  231  git stash
+  232  git status
+  233  git stash list
+  234  git show stash@{0}
+  235  git stash list
+  236  git status
+  237  git stash list
+  238  git stash pop stash@{0}
+  239  git status
+  240  git stash list
+  241  git stash -p
+  242  git status
+  243  vi feature4
+  244  git add .
+  245  git commit -m "feature4 completed"
+  246  git status
+  247  git stash list
+  248  git show stash@{0}
+  249  git stash drop stash@{0}
+  250  git stash list
+  251  ls -l
+  252  cat feature5
+  253  ls -l
+  254  git status
+  255  rm feature5
+  256  git status
+  257  git restore feature5
+  258  git status
+  259  git rm feature5
+  260  ls -l
+  261  git ls-files
+  262  git status
+  263  git rstore --staged feature5
+  264  git status
+  265  git restore --staged feature5
+  266  git status
+  267  git ls-files
+  268  ls -l
+  269  git restore feature5
+  270  git status
+  271  ls -l
+  272  cd project1
+  273  ls -l
+  274  git branch
+  275  git checkout master
+  276  ls -l
+  277  git log --oneline
+  278  git checkout -b b3 master
+  279  git log --oneline
+  280  git checkout master
+  281  vi test
+  282  git add .
+  283  git commit -m "d1-test-file"
+  284  git checkout b3
+  285  vi test
+  286  git add .
+  287  git commit -m "d3-test-file"
+  288  git rebase master
+  289  git branch
+  290  ls -l
+  291  cat test
+  292  git status
+  293  vi test
+  294  git status
+  295  git add test
+  296  git status
+  297  git commit -m "merge-conflict-resolved"
+  298  git status
+  299  git rebase --continue
+  300  git status
+  301  git log --oneline
+  302  ls -l
