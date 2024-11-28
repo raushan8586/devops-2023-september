@@ -422,3 +422,36 @@ docker logs fd0ac55645a0
   175  docker ps
   176  docker-compose up -d
   177  docker ps
+
+-------------------------------------------------------------------
+Nov 2024 batch
+------------------------
+
+82  docker version
+   83  apt install docker.io -y
+   84  docker version
+   85  clear
+   86  apt install apache2 -y
+   87  lsof -i -P -n | grep LISTEN
+   88  systemctl status apache2
+   89  clear
+   90  cd /var/www/html/
+   91  ls -l
+   92  pwd
+   93  vi index1.html
+   94  ls -l
+   95  docker images
+   96  docker pull httpd
+   97  docker images
+   98  clear
+   99  docker ps
+  100  docker container ls
+  101  docker images
+  102  docker inspect dad6ca1caf78
+  103  clear
+  104  docker images
+  105  docker run -itd -p 82:80 httpd
+  106  docker ps
+  107  docker inspect e55451d82308
+  108  docker network ls
+  109  docker inspect ac77f42ec1b5
