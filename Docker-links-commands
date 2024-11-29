@@ -247,9 +247,11 @@ docker volume ls
   188  docker exec -it 4b63a2f753ed /bin/bash --> mysql -u wordpress -p wordpress (connect to mysql db client/instance using this)
   189  docker ps
   190  docker images
-  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1
+  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1 (docker tag CURRENT_IMAGE_NAME DESIRED_IMAGE_NAME)
   192  docker login
   193  docker image push raushan8586/devops-september-2023:httpd1
+
+
 
 
 ----------------------------------------------------------------------------------
