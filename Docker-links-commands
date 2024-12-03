@@ -22,6 +22,7 @@ https://docs.docker.com/reference/cli/docker/container/run/
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 https://docs.docker.com/build/building/multi-stage/
 
+
 *COPY vs ADD, CMD vs ENTRYPOINT
 
 Examples
@@ -428,7 +429,8 @@ docker logs fd0ac55645a0
 -------------------------------------------------------------------
 Nov 2024 batch
 ------------------------
-
+28th Nov
+--------
 82  docker version
    83  apt install docker.io -y
    84  docker version
@@ -458,6 +460,8 @@ Nov 2024 batch
   108  docker network ls
   109  docker inspect ac77f42ec1b5
 
+29th Nov
+-------------
 12  docker exec -it 1065753db369 /bin/bash
    13  clear
    14  docker images
@@ -476,7 +480,15 @@ Nov 2024 batch
    27  df -h
    28  docker stats
    29  docker images
-   30  docker ps
+30  docker ps
+
+3rd Dec
+ 285  docker build . -t httpd3
+  286  docker images
+  287  docker ps
+  288  docker rm -f a9c34c23fbb6
+  289  docker ps
+  290  docker run -itd --name web1 -p 80:80 httpd3
    31  docker pull fedora
    32  docker images
    33  docker run -itd fedora
