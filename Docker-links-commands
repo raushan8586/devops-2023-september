@@ -457,3 +457,27 @@ Nov 2024 batch
   107  docker inspect e55451d82308
   108  docker network ls
   109  docker inspect ac77f42ec1b5
+
+12  docker exec -it 1065753db369 /bin/bash
+   13  clear
+   14  docker images
+   15  docker exec -it 1065753db369 /bin/bash
+   16  docker ps
+   17  docker images
+   18  docker commit 1065753db369 httpd1
+   19  docker images
+   20  docker ps
+   21  docker commit 1065753db369 httpd2
+   22  docker images
+   23  docker commit 1065753db369 httpd
+   24  docker images
+   25  docker run -itd -p 81:80 httpd1
+   26  docker ps
+   27  df -h
+   28  docker stats
+   29  docker images
+   30  docker ps
+   31  docker pull fedora
+   32  docker images
+   33  docker run -itd fedora
+   34  docker ps
