@@ -495,3 +495,110 @@ Nov 2024 batch
    32  docker images
    33  docker run -itd fedora
    34  docker ps
+
+4th Dec
+mkdir project1
+  271  cd project1/
+  272  clear
+  273  ls -l
+  274  pwd
+  275  vi Dockerfile
+  276  ls -l
+  277  vi index1.html
+  278  vi Dockerfile 
+  279  cat index1.html 
+  280  cat Dockerfile 
+  281  vi Dockerfile 
+  282  cat Dockerfile 
+  283  ls -l
+  284  docker images
+  285  docker build . -t httpd3
+  286  docker images
+  287  docker ps
+  288  docker rm -f a9c34c23fbb6
+  289  docker ps
+  290  docker run -itd --name web1 -p 80:80 httpd3
+  291  docker ps
+  292  docker stop 207fc7af2327
+  293  docker ps
+  294  cd ..
+  295  mkdir project2
+  296  cd project2
+  297  ls -l
+  298  vi Dockerfile
+  299  vi index1.html
+  300  ls -l
+  301  docker build . -t ubuntu1
+  302  docker images
+  303  docker inspect ubuntu1
+  304  docker ps
+  305  docker run -itd --name web-container -p 80:
+  306  docker run -itd --name web-container -p 80:80
+  307  docker run -itd --name web-container -p 80:80 ubuntu1
+  308  docker ps
+  309  docker images
+  310  history
+  311  docker version
+  312  docker images
+  313  docker volume ls
+  314  docker volume create web-volume
+  315  docker volume ls
+  316  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  317  docker ps -a
+  318  docker rm 207fc7af2327
+  319  docker ps -a
+  320  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  321  docker ps
+  322  cd /var/lib/docker
+  323  ls -l
+  324  cd volumes/
+  325  ls -l
+  326  cd web-volume/
+  327  ls -l
+  328  cd _data
+  329  ls -l
+  330  cat index.html 
+  331  pwd
+  332  vi index1.html
+  333  cat index1.html 
+  334  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web2 -p 81:80 httpd
+  335  docker ps
+  336  docker rm -f 8419643b2a86 8f8dcac91c8a
+  337  ls -l
+  338  docker ps
+  339  pwd
+  340  docker network ls
+  341  docker ps
+  342  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web2 -p 81:80 httpd
+  343  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  344  docker ps
+  345  docker inspect d601a71f692d
+  346  docker network ls
+  347  docker inspect d59db3fdaf42
+  348  docker network ls
+  349  cd ~
+  350  ls -l
+  351  mkdir project3
+  352  cd project3
+  353  vi docker-compose.yaml
+  354  cat docker-compose.yaml 
+  355  docker-compose version
+  356  wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+  357  ls -l
+  358  chmod +x docker-compose-linux-x86_64
+  359  ls -l
+  360  mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+  361  docker-compose version
+  362  ls -l
+  363  docker ps
+  364  docker rm -f d601a71f692d 97a5d372bf83
+  365  clear
+  366  ls -l
+  367  docker-compose up -d
+  368  docker images
+  369  docker network ls
+  370  docker volume ls
+  371  docker ps
+  372  docker exec -it fa3b6c5fec0f /bin/bash
+  373  docker ps
+  374  docker exec -it 4a8b5d0b0f6a /bin/bash
