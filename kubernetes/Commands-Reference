@@ -60,3 +60,30 @@ kubectl delete -f loadbalancer-service.yaml
 kubectl get hpa
 
 kubectl get rs
+
+---------------------------------
+
+6th Dec 2024
+-------------
+24  kubectl get nodes
+   25  kubectl get no
+   26  kubectl get namespaces
+   27  kubectl create ns app1
+   28  kubectl get namespaces
+   29  kubectl get all -n kube-system
+   30  kubectl get namespaces
+   31  kubectl get all -n default
+   32  kubectl get all -n kube-node-lease
+   33  kubectl get all -n kube-public
+   34  ls -l
+   35  cd cloud-pe-oct-2023/
+   36  ls -l
+   37  cat nginx-pod.yaml 
+   38  kubectl get all -n default
+   39  kubectl get all
+   40  kubectl create -f nginx-pod.yaml 
+   41  kubectl get all
+   42  kubectl describe pod nginx-pod
+   43  kubectl get pods
+   44  kubectl get pods -o wide
+   45  kubectl get nodes
