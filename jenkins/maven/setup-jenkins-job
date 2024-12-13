@@ -73,8 +73,10 @@ clean package
 
 Artifact Name: ArtifactID + Version + Packaging --> as specified in pom.xml
 
-1st Feb 2024:
+Latest --> 
+wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
 48  wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+
    49  ls -l
    50  tar xvzf apache-maven-3.9.6-bin.tar.gz
    51  ls -l
