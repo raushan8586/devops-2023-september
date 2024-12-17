@@ -14,7 +14,7 @@ https://github.com/jenkins-docs/simple-java-maven-app/blob/master/jenkins/Jenkin
 Interview
 https://devopspilot.com/jenkins/pipelines/40-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat/
 https://devopspilot.com/jenkins/pipelines/50-jenkinsfile-to-build-docker-image-push-deploy-to-same-server/
-https://github.com/eldada/jenkins-pipeline-kubernetes
+https://dhruv-mavani.medium.com/deploy-kubernetes-apps-with-jenkins-36e68c1b4e29
 
 
 Declerative Vs Scripted pipeline
