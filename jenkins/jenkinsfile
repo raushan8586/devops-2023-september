@@ -11,7 +11,10 @@ https://gist.github.com/gazoakley/87dcc16d28fd05acda4ba0a4be5ac387
 https://gist.github.com/merikan/228cdb1893fca91f0663bab7b095757c
 https://github.com/jenkins-docs/simple-java-maven-app/blob/master/jenkins/Jenkinsfile
 
+Interview
 https://devopspilot.com/jenkins/pipelines/40-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat/
+https://devopspilot.com/jenkins/pipelines/50-jenkinsfile-to-build-docker-image-push-deploy-to-same-server/
+https://github.com/eldada/jenkins-pipeline-kubernetes
 
 
 Declerative Vs Scripted pipeline
