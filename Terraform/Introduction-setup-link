@@ -14,6 +14,8 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 https://code.visualstudio.com/download
 
+https://medium.com/@pankajkumar1881991/-05271d9b3630
+
 
 terraform refresh → Get you the latest state of the infrastructure
 
@@ -30,3 +32,6 @@ https://github.com/stacksimplify/hashicorp-certified-terraform-associate
 
 Jenkins Terraform Integration:-
 https://plugins.jenkins.io/terraform/
+
+
+
