@@ -55,6 +55,12 @@ Installation:
     5  apt install ansible -y
     6  ansible --version
 
+ansible adhoc command examples
+21  ansible -m ping host1
+   22  ansible host1 -m shell -a "free -h"
+   23  ansible host1 -m shell -a "df -h"
+   24  ansible host1 -m shell -a "apt install apache2 -y"
+
 
     ssh keyless connectivity
     7  history
