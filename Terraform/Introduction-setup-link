@@ -39,6 +39,8 @@ user-data:
 https://www.middlewareinventory.com/blog/terraform-aws-ec2-user_data-example/
 https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
+https://registry.terraform.io/browse/modules?provider=aws
+
 
 
 
