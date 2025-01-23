@@ -13,7 +13,7 @@ Roles of a DevOps / SRE Engineer (Continuous Monitoring):
 
 Monitoring tools:
 1. Prometheus & Grafana
-2. ELK (Elasticsearch, Logstash, Kibana)
+2. ELK (Elasticsearch, Logstash, Kibana) --> Elastic Stack
 
 time-series DB --> InfluxDB, Prometheus
 Grafana --> visualization
