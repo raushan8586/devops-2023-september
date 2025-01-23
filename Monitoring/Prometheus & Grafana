@@ -3,7 +3,7 @@ Prometheus:
 
 https://prometheus.io/docs/introduction/overview/
 
-Exporters
+Exporters / agents
 https://prometheus.io/docs/instrumenting/exporters/
 
 Installation:
