@@ -30,7 +30,7 @@ root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
    25  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
    26  sudo chown -R prometheus:prometheus /var/lib/prometheus
    27  vi /etc/prometheus/prometheus.yml
-   28  vi /etc/systemd/system/prometheus.service
+   28  vi /etc/systemd/system/prometheus.service --> check bottom of the file for the content
    29  sudo systemctl daemon-reload
    30  sudo systemctl enable prometheus
    31  sudo systemctl start prometheus
@@ -71,5 +71,24 @@ Grafana:
    68  systemctl status grafana-server
    69  lsof -i -P -n | grep LISTEN
    70  history
+
+
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
 
 
