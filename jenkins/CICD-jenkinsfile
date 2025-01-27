@@ -1,0 +1,15 @@
+https://github.com/raushan8586/Deploy-NodeApp-to-AWS-EKS-using-Jenkins-Pipeline
+
+Create ubuntu instance
+1. Install java and jenkins
+2. Install docker in ubuntu EC2 instance
+
+  sudo usermod -aG docker $USER
+  sudo chmod 666 /var/run/docker.sock
+
+3. Install eksctl, kubectl, aws cli --> aws configure as jenkins user (sudo -su jenkins) as well along with root user 
+
+4, create EKS cluster
+
+login to jenkins and install nodejs plugin. Go to tools and install nodejs (provide node name --> matching with jenkinsfile)
+Got to credentials and configure credentials for gitHub and Docker Hub
