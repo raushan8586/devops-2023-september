@@ -7,6 +7,13 @@ sudo su -
     4  docker version
     5  docker info
 
+add default user - ubuntu in docker group
+
+https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
+sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
+
+
   Images:
 https://hub.docker.com/
 https://hub.docker.com/search?image_filter=official
