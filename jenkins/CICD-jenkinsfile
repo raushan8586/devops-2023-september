@@ -9,7 +9,11 @@ Create ubuntu instance
 
 3. Install eksctl, kubectl, aws cli --> aws configure as jenkins user (sudo -su jenkins) as well along with root user 
 
-4, create EKS cluster
+4. create EKS cluster
 
 login to jenkins and install nodejs plugin. Go to tools and install nodejs (provide node name --> matching with jenkinsfile)
 Got to credentials and configure credentials for gitHub and Docker Hub
+
+5. Create jenkins pipeline using jenkinsfile in the script --> use pipeline script
+
+6. verify
