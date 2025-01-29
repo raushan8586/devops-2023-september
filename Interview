@@ -56,7 +56,8 @@ https://argo-cd.readthedocs.io/en/stable/
   Non-Relational DB --> MongoDB --> https://www.mongodb.com/resources/products/fundamentals/basics
 
 10. Applications Servers (Deployment)
-  Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
+(MUST)  Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
+
   weblogic --> Experienced Professionals
 
 
