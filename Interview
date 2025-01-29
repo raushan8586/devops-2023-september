@@ -19,6 +19,8 @@ Walkthrough the Deployment architecture worked recently
 
   --> Kubernetes Ingress. How is it different from LoadBalancer? API Gateway/LoadBalancer/Kubernetes Ingress
 
+Learn helm chart --> https://helm.sh/
+
 5. Terraform
   https://www.interviewbit.com/terraform-interview-questions/
   https://intellipaat.com/blog/interview-question/terraform-interview-questions/#4
@@ -42,6 +44,9 @@ GitHub Actions:
 
 GitOps --> Continuous Deployment --> argoCD
 https://www.youtube.com/watch?v=f5EpcWp0THw&pp=ygUGZ2l0b3Bz
+
+https://argo-cd.readthedocs.io/en/stable/
+
 
 8. Monitoring:
   --> setup
