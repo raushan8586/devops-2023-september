@@ -27,6 +27,10 @@ terraform apply
 
 terraform destroy
 
+Terraform Modules
+https://registry.terraform.io/browse/modules?provider=aws
+
+
 Terraform Examples:-
 https://github.com/stacksimplify/hashicorp-certified-terraform-associate
 
