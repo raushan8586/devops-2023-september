@@ -32,3 +32,31 @@ Grafana Password:
 kubectl get secret --namespace prometheus stable-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 
 Grafana Dashboards --> 15760, 18283, 315, 6417
+
+==========================================================================================================================================
+==========================================================================================================================================
+==========================================================================================================================================
+
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add grafana https://grafana.github.io/helm-charts
+
+
+kubectl create namespace monitoring
+
+helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
+kubectl port-forward prometheus-kube-prometheus-stack-prometheus-0 9090
+
+
+helm install grafana grafana/grafana --namespace monitoring
+kubectl port-forward svc/grafana 3000:80
+
+===============================================================================================
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add stable https://charts.helm.sh/stable
+elm repo update
+helm install prometheus prometheus-community/kube-prometheus-stack
+
+kubectl port-forward deployment/prometheus-grafana 3000
+
