@@ -34,6 +34,35 @@ kubectl get secret --namespace prometheus stable-grafana -o jsonpath="{.data.adm
 Grafana Dashboards --> 15760, 18283, 315, 6417
 
 ==========================================================================================================================================
+Ingress
+-------
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prometheus-grafana-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx # Replace with your ingress controller class
+    nginx.ingress.kubernetes.io/rewrite-target: /$1  # Optional: rewrite paths for cleaner URLs
+spec:
+  rules:
+  - host: monitoring.yourdomain.com # Your desired monitoring domain
+    http:
+      paths:
+      - path: /prometheus/
+        pathType: Prefix
+        backend:
+          service:
+            name: prometheus
+            port: 
+              number: 9090 
+      - path: /grafana/
+        pathType: Prefix
+        backend:
+          service:
+            name: grafana
+            port: 
+              number: 3000 
+
 ==========================================================================================================================================
 ==========================================================================================================================================
 
