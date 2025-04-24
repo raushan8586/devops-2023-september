@@ -6,7 +6,7 @@ Git --> Version control system
 GitHUb --> Source Code Management / Online Code Repo --> Remote Repo
 
 Why VCS?
-1. To track changes --> who commited the changes? what was changed? --> commit ID
+1. To track changes --> who commited the changes? what was changed? when the commit was done? --> commit ID
 2. To retrieve files from accidental deletes
 
 Types of VCS
