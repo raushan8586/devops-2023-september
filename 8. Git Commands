@@ -924,3 +924,90 @@ ls -l
   300  git status
   301  git log --oneline
   302  ls -l
+
+
+
+
+
+
+--------------------------------------
+1st May 2025
+--------------------------------------
+root@ip-172-31-10-248:~/git-push-demo# history
+    1  apt update -y
+    2  clear
+    3  git clone https://github.com/raushan8586/pipeline1.git
+    4  ls -l
+    5  cd pipeline1/
+    6  ls -l
+    7  git log
+    8  git log --oneline
+    9  git branch
+   10  cd ..
+   11  ls -l
+   12  git clone https://github.com/raushan8586/git-push-demo.git
+   13  ls -l
+   14  cd git-push-demo/
+   15  ls -l
+   16  git branch
+   17  ls -l
+   18  git checkout branch1
+   19  ls -l
+   20  git branch
+   21  git checkout branch2
+   22  git checkout master
+   23  git branch
+   24  git log --oneline
+   25  git remote -v
+   26  git branch
+   27  git pull origin master
+   28  git log --oneline
+   29  git checkout branch1
+   30  git log --oneline
+   31  git rebase master
+   32  git log --oneline
+   33  git brancg
+   34  git branch
+   35  ls -l
+   36  vi file5.java
+   37  cat file5.java 
+   38  git log --oneline
+   39  ls -la
+   40  cd ..
+   41  mkdir test1
+   42  cd test1
+   43  git version
+   44  pwd
+   45  ls -la
+   46  ls -l
+   47  ls -la
+   48  git init
+   49  ls -l
+   50  ls -la
+   51  cd ..
+   52  ls -l
+   53  cd git-push-demo/
+   54  ls -l
+   55  git branch
+   56  ls -l
+   57  git checkout master
+   58  ls -l
+   59  git branch
+   60  pwd
+   61  git checkout branch1
+   62  ls -l
+   63  git status
+   64  git add file5.java
+   65  git status
+   66  pwd
+   67  git commit -m "file5.java added"
+   68  git log --oneline
+   69  git status
+   70  git checkout master
+   71  git log --oneline
+   72  ls -l
+   73  git checkout branch1
+   74  ls -l
+   75  git log --oneline
+   76  git push origin branch1
+   77  history
