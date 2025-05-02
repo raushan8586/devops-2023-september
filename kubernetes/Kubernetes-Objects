@@ -6,3 +6,6 @@
   a. NodePort --> to expose the front-end pods
   b. LoadBalancer --> to load balancer the traffic across multiple nodes
   c. ClusterIP --> For the communication between front-end pods and backend pods
+
+
+Kubernetes uses "containerd" as the container engine

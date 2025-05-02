@@ -8,9 +8,13 @@ https://github.com/raushan8586/MyLab.git
 https://github.com/eldada/jenkins-pipeline-kubernetes
 https://github.com/hakdogan/jenkins-pipeline/blob/master/Jenkinsfile
 https://gist.github.com/gazoakley/87dcc16d28fd05acda4ba0a4be5ac387
+https://gist.github.com/merikan/228cdb1893fca91f0663bab7b095757c
 https://github.com/jenkins-docs/simple-java-maven-app/blob/master/jenkins/Jenkinsfile
 
-https://devopspilot.com/content/jenkins/tutorials/pipeline/04-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat.html
+Interview
+https://devopspilot.com/jenkins/pipelines/40-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat/
+https://devopspilot.com/jenkins/pipelines/50-jenkinsfile-to-build-docker-image-push-deploy-to-same-server/
+https://dhruv-mavani.medium.com/deploy-kubernetes-apps-with-jenkins-36e68c1b4e29
 
 
 Declerative Vs Scripted pipeline

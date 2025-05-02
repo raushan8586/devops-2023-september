@@ -19,6 +19,8 @@ Walkthrough the Deployment architecture worked recently
 
   --> Kubernetes Ingress. How is it different from LoadBalancer? API Gateway/LoadBalancer/Kubernetes Ingress
 
+Learn helm chart --> https://helm.sh/
+
 5. Terraform
   https://www.interviewbit.com/terraform-interview-questions/
   https://intellipaat.com/blog/interview-question/terraform-interview-questions/#4
@@ -40,18 +42,21 @@ GitHub Actions:
   https://www.youtube.com/watch?v=ylEy4eLdhFs
   https://www.youtube.com/watch?v=R8_veQiYBjI
 
-GitOps --> Continuous Deployment
-https://www.youtube.com/watch?v=f5EpcWp0THw&pp=ygUGZ2l0b3Bz
+GitOps --> Continuous Deployment --> argoCD --> https://argo-cd.readthedocs.io/en/stable/
+
+https://www.youtube.com/watch?v=MeU5_k9ssrs
+
 
 8. Monitoring:
   --> setup
 
 9. Database
   Relational DB --> MySQL
-  Non-Relational DB --> MongoDB
+  Non-Relational DB --> MongoDB --> https://www.mongodb.com/resources/products/fundamentals/basics
 
 10. Applications Servers (Deployment)
-  Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
+(MUST)  Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
+
   weblogic --> Experienced Professionals
 
 

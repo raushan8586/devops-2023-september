@@ -37,13 +37,13 @@ ubuntu@ip-172-31-13-232:~/kibana-8.10.4/bin$ history
    14  ./kibana
    15  history
 
-Edit kibana.yml and change hostname with Private IP --> server.host: "172.31.13.232"
+Edit kibana.yml and change/uncomment hostname with Private IP --> server.host: "172.31.13.232"
 use the public IP in the browser though
 
 Note: Refresh the page. Don't wait long.
 
 3. Elastic Agent -->
-Login to Kibana --> add integrations --> search for Elastic Agent --> Download elastic-agent.yml --> edit it with elastic user and password.
+Login to Kibana --> add integrations --> search for Elastic Agent --> --> create api, which acts as credentials --> Download elastic-agent.yml 
 
 
 ubuntu@ip-172-31-13-232:~/elastic-agent-8.10.4-linux-x86_64$ history

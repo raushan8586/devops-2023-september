@@ -616,3 +616,398 @@ git log --oneline
   355  git stash list
   356  git stash drop stash@{1}
   357  git stash list
+
+
+------------------------------------------------------
+devops-nov-2024
+-------------------------------------------------------
+
+1  apt update -y
+    2  git version
+    3  ls -l
+    4  git clone https://github.com/raushan8586/devops-19nov-2024.git
+    5  ls -l
+    6  cd devops-19nov-2024/
+    7  ls -l
+    8  git branch
+    9  cd ..
+   10  ls -l
+   11  cd devops-19nov-2024/
+   12  ls -l
+   13  ls -la
+   14  ls -l
+   15  cd ..
+   16  ls -l
+   17  mkdir project1
+   18  cd project1/
+   19  ls -la
+   20  git init
+   21  ls -la
+   22  git branch
+   23  ls -la
+   24  cd ..
+   25  mkdir project2
+   26  ls -l
+   27  cd project1
+   28  ls -l
+   29  ls -la
+   30  vi file1
+   31  cat file1 
+   32  ls -l
+   33  pwd
+   34  git status
+   35  cd ../project2/
+   36  vi file1
+   37  ls -l
+   38  ls -la
+   39  git status
+   40  cd ../project1/
+   41  git status
+   42  ls -l
+   43  git add file1
+   44  git status
+   45  git log
+   46  git commit -m "1st commit"
+   47  git status
+   48  ls -l
+   49  git ls-files
+   50  git log
+   51  vi file2
+   52  ls -l
+   53  git ls-files
+   54  git status
+   55  git add file2
+   56  git status
+   57  git commit -m "2nd-commit"
+   58  git status
+   59  git ls-files
+   60  git log
+   61  ls -l
+   62  cd project
+   63  cd project1/
+   64  ls -l
+   65  ls -la
+   66  vi file3
+   67  ls -l
+   68  git ls-files
+   69  git status
+   70  git add file3
+   71  git status
+   72  git commit -m "3rd commit"
+   73  git log
+   74  git config --global user.email "raushan8586.kumar@gmail.com"
+   75  git config --global user.name "Raushan Kumar"
+   76  vi file4
+   77  vi file5
+   78  git status
+   79  git add .
+   80  git commit -m "4th commit"
+   81  git log
+   82  git branch
+   83  git status
+   84  git log --one-line
+   85  git log -oneline
+   86  git log --oneline
+   87  git show dd1b59b
+   88  git remote -v
+   89  cd ..
+   90  ls -l
+   91  cd devops-19nov-2024/
+   92  git remote -v
+   93  cd ../project1/
+   94  ls -l
+   95  git remote -v
+   96  git status
+   97  git remote add origin https://github.com/raushan8586/devops-nov-2024.git
+   98  git remote -v
+   99  git push origin master
+  100  git log --oneline
+
+102  git branch
+  103  ls -l
+  104  cd project
+  105  cd project1/
+  106  ls -l
+  107  git log --oneline
+  108  git status
+  109  git branch
+  110  git remote -v
+  111  git log --oneline
+  112  git pull
+  113  git log --oneline
+  114  git pull origin master
+  115  git log --oneline
+  116  git branch b1 master
+  117  git branch
+  118  git checkout b1
+  119  git branch
+  120  vi feature1
+  121  git add .
+  122  git commit -m "feature1-d1-commit"
+  123  git log --oneline
+  124  git remote -v
+  125  git push origin b1
+  126  git branch
+  127  git log --oneline
+  128  git checkout master
+  129  git pull origin master
+  130  git log --oneline
+  131  git branch
+  132  git pull origin master
+  133  git log --oneline
+  134  git checkout b1
+  135  git log --oneline
+  136  git rebase master
+  137  git log --oneline
+  138  git branch
+  139  git checkout -b b2 master
+  140  git branch
+  141  git log --oneline
+  142  ls -l
+  143  vi app1.log
+  144  vi ReadMe
+  145  vi feature3
+  146  git status
+  147  vi .gitignore
+  148  git status
+  149  git add .
+  150  git commit -m "feature3-gitignore-file-added"
+  151  git status
+  152  ls -l
+  153  git ls-files
+  154  git push origin b2
+  155  vi feature4
+  156  git add .
+  157  git commit -m "feature4 added"
+  158  git log --oneline
+  159  git show acc64ae
+  160  git revert acc64ae
+  161  git log --oneline
+  162  git show 530fcf8
+  163  git log --oneline
+  164  ls -l
+  165  git revert 530fcf8
+  166  git log --oneline
+  167  ls -l
+  168  rm file1
+  169  ls -l
+  170  git status
+  171  git restore file1
+  172  ls -l
+
+ls -l
+  175  cd project1
+  176  ls -l
+  177  pwd
+  178  ls -la
+  179  git status
+  180  git branch
+  181  git log --oneline
+  182  ls -l
+  183  vi feature5
+  184  ls -l
+  185  cd project1/
+  186  pwd
+  187  ls -l
+  188  git status
+  189  vi feature5
+  190  git add .
+  191  git commit -m "feature5 added"
+  192  git log --oneline
+  193  ls -l
+  194  git ls-files
+  195  git status
+  196  ls -l
+  197  git log --oneline
+  198  rm feature5
+  199  ls -l
+  200  git status
+  201  git ls-files
+  202  git restore feature5
+  203  ls -l
+  204  git status
+  205  git log --oneline
+  206  git revert 9ecbac6
+  207  git log --oneline
+  208  ls -l
+  209  git ls-files
+  210  git log --oneline
+  211  git checkout master
+  212  git log --oneline
+  213  git checkout b1
+  214  git log --oneline
+  215  git checkout b2
+  216  git log --oneline
+  217  git reset --hard acc64ae
+  218  git log --oneline
+  219  git status
+  220  ls -l
+  221  git log --oneline
+  222  vi feature5
+  223  git add .
+  224  git commit -m "feature5 added"
+  225  vi feature4
+  226  vi feature5
+  227  git status
+  228  ls -l
+  229  git status
+  230  git stash list
+  231  git stash
+  232  git status
+  233  git stash list
+  234  git show stash@{0}
+  235  git stash list
+  236  git status
+  237  git stash list
+  238  git stash pop stash@{0}
+  239  git status
+  240  git stash list
+  241  git stash -p
+  242  git status
+  243  vi feature4
+  244  git add .
+  245  git commit -m "feature4 completed"
+  246  git status
+  247  git stash list
+  248  git show stash@{0}
+  249  git stash drop stash@{0}
+  250  git stash list
+  251  ls -l
+  252  cat feature5
+  253  ls -l
+  254  git status
+  255  rm feature5
+  256  git status
+  257  git restore feature5
+  258  git status
+  259  git rm feature5
+  260  ls -l
+  261  git ls-files
+  262  git status
+  263  git rstore --staged feature5
+  264  git status
+  265  git restore --staged feature5
+  266  git status
+  267  git ls-files
+  268  ls -l
+  269  git restore feature5
+  270  git status
+  271  ls -l
+  272  cd project1
+  273  ls -l
+  274  git branch
+  275  git checkout master
+  276  ls -l
+  277  git log --oneline
+  278  git checkout -b b3 master
+  279  git log --oneline
+  280  git checkout master
+  281  vi test
+  282  git add .
+  283  git commit -m "d1-test-file"
+  284  git checkout b3
+  285  vi test
+  286  git add .
+  287  git commit -m "d3-test-file"
+  288  git rebase master
+  289  git branch
+  290  ls -l
+  291  cat test
+  292  git status
+  293  vi test
+  294  git status
+  295  git add test
+  296  git status
+  297  git commit -m "merge-conflict-resolved"
+  298  git status
+  299  git rebase --continue
+  300  git status
+  301  git log --oneline
+  302  ls -l
+
+
+
+
+
+
+--------------------------------------
+1st May 2025
+--------------------------------------
+root@ip-172-31-10-248:~/git-push-demo# history
+    1  apt update -y
+    2  clear
+    3  git clone https://github.com/raushan8586/pipeline1.git
+    4  ls -l
+    5  cd pipeline1/
+    6  ls -l
+    7  git log
+    8  git log --oneline
+    9  git branch
+   10  cd ..
+   11  ls -l
+   12  git clone https://github.com/raushan8586/git-push-demo.git
+   13  ls -l
+   14  cd git-push-demo/
+   15  ls -l
+   16  git branch
+   17  ls -l
+   18  git checkout branch1
+   19  ls -l
+   20  git branch
+   21  git checkout branch2
+   22  git checkout master
+   23  git branch
+   24  git log --oneline
+   25  git remote -v
+   26  git branch
+   27  git pull origin master
+   28  git log --oneline
+   29  git checkout branch1
+   30  git log --oneline
+   31  git rebase master
+   32  git log --oneline
+   33  git brancg
+   34  git branch
+   35  ls -l
+   36  vi file5.java
+   37  cat file5.java 
+   38  git log --oneline
+   39  ls -la
+   40  cd ..
+   41  mkdir test1
+   42  cd test1
+   43  git version
+   44  pwd
+   45  ls -la
+   46  ls -l
+   47  ls -la
+   48  git init
+   49  ls -l
+   50  ls -la
+   51  cd ..
+   52  ls -l
+   53  cd git-push-demo/
+   54  ls -l
+   55  git branch
+   56  ls -l
+   57  git checkout master
+   58  ls -l
+   59  git branch
+   60  pwd
+   61  git checkout branch1
+   62  ls -l
+   63  git status
+   64  git add file5.java
+   65  git status
+   66  pwd
+   67  git commit -m "file5.java added"
+   68  git log --oneline
+   69  git status
+   70  git checkout master
+   71  git log --oneline
+   72  ls -l
+   73  git checkout branch1
+   74  ls -l
+   75  git log --oneline
+   76  git push origin branch1
+   77  history

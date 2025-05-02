@@ -3,7 +3,7 @@ Prometheus:
 
 https://prometheus.io/docs/introduction/overview/
 
-Exporters
+Exporters / agents
 https://prometheus.io/docs/instrumenting/exporters/
 
 Installation:
@@ -35,4 +35,8 @@ import 1860
 
 Grafana Alerts:
 https://grafana.com/docs/grafana/latest/alerting/set-up/
+https://grafana.com/docs/grafana/latest/alerting/
+
+Kubernetes
+https://grafana.com/grafana/dashboards/18283-kubernetes-dashboard/
 

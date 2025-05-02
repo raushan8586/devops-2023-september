@@ -1,6 +1,20 @@
 3 Command lines are required:
 1. kubectl --> Default command line for kuberntes --> https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin
+
+
 2. aws cli --> https://docs.aws.amazon.com/cli/latest/ --> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
+aws configure
+
+
 3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
 --> https://eksctl.io/installation/
 

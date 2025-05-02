@@ -15,6 +15,9 @@ Kubernetes Objects:
 2. ReplicaSet --> To maintain a stable number of replica pods --> auto-healing
 3. Deployment --> deploys replica of pods without downtime
 4. services --> to expose the pods (front-end, back-end)
+  NodePort --> to expose front-end pods (very much similar to port mapping concept in Docker)
+  LoadBalancer --> to loadbalance the traffic across multiple nodes. LB uses NodePort
+  ClusterIP --> front-end and back-end pods communication
 
 Kubernetes Cloud Managed services:
 AWS --> EKS

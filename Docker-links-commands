@@ -7,6 +7,13 @@ sudo su -
     4  docker version
     5  docker info
 
+add default user - ubuntu in docker group
+
+https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
+sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
+
+
   Images:
 https://hub.docker.com/
 https://hub.docker.com/search?image_filter=official
@@ -22,14 +29,17 @@ https://docs.docker.com/reference/cli/docker/container/run/
 Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 https://docs.docker.com/build/building/multi-stage/
 
+
 *COPY vs ADD, CMD vs ENTRYPOINT
 
 Examples
 https://github.com/komljen/dockerfile-examples/tree/master
 
-Docker Network --> https://docs.docker.com/network/drivers/
+Docker Network --> https://docs.docker.com/engine/network/
 
 Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+https://github.com/docker/awesome-compose/tree/master
+
 https://docs.docker.com/compose/
 https://docs.docker.com/compose/intro/history/#compose-file-format-versioning
 
@@ -247,9 +257,11 @@ docker volume ls
   188  docker exec -it 4b63a2f753ed /bin/bash --> mysql -u wordpress -p wordpress (connect to mysql db client/instance using this)
   189  docker ps
   190  docker images
-  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1
+  191  docker image tag httpd1:latest raushan8586/devops-september-2023:httpd1 (docker tag CURRENT_IMAGE_NAME DESIRED_IMAGE_NAME)
   192  docker login
   193  docker image push raushan8586/devops-september-2023:httpd1
+
+
 
 
 ----------------------------------------------------------------------------------
@@ -422,3 +434,178 @@ docker logs fd0ac55645a0
   175  docker ps
   176  docker-compose up -d
   177  docker ps
+
+-------------------------------------------------------------------
+Nov 2024 batch
+------------------------
+28th Nov
+--------
+82  docker version
+   83  apt install docker.io -y
+   84  docker version
+   85  clear
+   86  apt install apache2 -y
+   87  lsof -i -P -n | grep LISTEN
+   88  systemctl status apache2
+   89  clear
+   90  cd /var/www/html/
+   91  ls -l
+   92  pwd
+   93  vi index1.html
+   94  ls -l
+   95  docker images
+   96  docker pull httpd
+   97  docker images
+   98  clear
+   99  docker ps
+  100  docker container ls
+  101  docker images
+  102  docker inspect dad6ca1caf78
+  103  clear
+  104  docker images
+  105  docker run -itd -p 82:80 httpd
+  106  docker ps
+  107  docker inspect e55451d82308
+  108  docker network ls
+  109  docker inspect ac77f42ec1b5
+
+29th Nov
+-------------
+12  docker exec -it 1065753db369 /bin/bash
+   13  clear
+   14  docker images
+   15  docker exec -it 1065753db369 /bin/bash
+   16  docker ps
+   17  docker images
+   18  docker commit 1065753db369 httpd1
+   19  docker images
+   20  docker ps
+   21  docker commit 1065753db369 httpd2
+   22  docker images
+   23  docker commit 1065753db369 httpd
+   24  docker images
+   25  docker run -itd -p 81:80 httpd1
+   26  docker ps
+   27  df -h
+   28  docker stats
+   29  docker images
+30  docker ps
+
+3rd Dec
+ 285  docker build . -t httpd3
+  286  docker images
+  287  docker ps
+  288  docker rm -f a9c34c23fbb6
+  289  docker ps
+  290  docker run -itd --name web1 -p 80:80 httpd3
+   31  docker pull fedora
+   32  docker images
+   33  docker run -itd fedora
+   34  docker ps
+
+4th Dec
+mkdir project1
+  271  cd project1/
+  272  clear
+  273  ls -l
+  274  pwd
+  275  vi Dockerfile
+  276  ls -l
+  277  vi index1.html
+  278  vi Dockerfile 
+  279  cat index1.html 
+  280  cat Dockerfile 
+  281  vi Dockerfile 
+  282  cat Dockerfile 
+  283  ls -l
+  284  docker images
+  285  docker build . -t httpd3
+  286  docker images
+  287  docker ps
+  288  docker rm -f a9c34c23fbb6
+  289  docker ps
+  290  docker run -itd --name web1 -p 80:80 httpd3
+  291  docker ps
+  292  docker stop 207fc7af2327
+  293  docker ps
+  294  cd ..
+  295  mkdir project2
+  296  cd project2
+  297  ls -l
+  298  vi Dockerfile
+  299  vi index1.html
+  300  ls -l
+  301  docker build . -t ubuntu1
+  302  docker images
+  303  docker inspect ubuntu1
+  304  docker ps
+  305  docker run -itd --name web-container -p 80:
+  306  docker run -itd --name web-container -p 80:80
+  307  docker run -itd --name web-container -p 80:80 ubuntu1
+  308  docker ps
+  309  docker images
+  310  history
+  311  docker version
+  312  docker images
+  313  docker volume ls
+  314  docker volume create web-volume
+  315  docker volume ls
+  316  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  317  docker ps -a
+  318  docker rm 207fc7af2327
+  319  docker ps -a
+  320  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  321  docker ps
+  322  cd /var/lib/docker
+  323  ls -l
+  324  cd volumes/
+  325  ls -l
+  326  cd web-volume/
+  327  ls -l
+  328  cd _data
+  329  ls -l
+  330  cat index.html 
+  331  pwd
+  332  vi index1.html
+  333  cat index1.html 
+  334  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web2 -p 81:80 httpd
+  335  docker ps
+  336  docker rm -f 8419643b2a86 8f8dcac91c8a
+  337  ls -l
+  338  docker ps
+  339  pwd
+  340  docker network ls
+  341  docker ps
+  342  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web2 -p 81:80 httpd
+  343  docker run -itd --mount source=web-volume,target=/usr/local/apache2/htdocs --name web1 -p 80:80 httpd
+  344  docker ps
+  345  docker inspect d601a71f692d
+  346  docker network ls
+  347  docker inspect d59db3fdaf42
+  348  docker network ls
+  349  cd ~
+  350  ls -l
+  351  mkdir project3
+  352  cd project3
+  353  vi docker-compose.yaml
+  354  cat docker-compose.yaml 
+  355  docker-compose version
+  356  wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+  357  ls -l
+  358  chmod +x docker-compose-linux-x86_64
+  359  ls -l
+  360  mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+  361  docker-compose version
+  362  ls -l
+  363  docker ps
+  364  docker rm -f d601a71f692d 97a5d372bf83
+  365  clear
+  366  ls -l
+  367  docker-compose up -d
+  368  docker images
+  369  docker network ls
+  370  docker volume ls
+  371  docker ps
+  372  docker exec -it fa3b6c5fec0f /bin/bash
+  373  docker ps
+  374  docker exec -it 4a8b5d0b0f6a /bin/bash

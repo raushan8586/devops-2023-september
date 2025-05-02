@@ -1,7 +1,7 @@
-API Server ---> Gatekeeper
+API Server ---> Gatekeeper, validates the yaml
 Scheduler --> schedules K8s objects on nodes
-Cointrooler Manager --> Overall health of the cluster
+Controller Manager --> Overall health of the cluster
 etcd --> database --> lighweight, centralized, key-value pair DB
 
 Kubelet --> makes sure containers are runnig healthy
-kube-proxy --> core netwrking component in the cluster
+kube-proxy --> core networking component in the cluster
