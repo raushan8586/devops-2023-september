@@ -1011,3 +1011,64 @@ root@ip-172-31-10-248:~/git-push-demo# history
    75  git log --oneline
    76  git push origin branch1
    77  history
+
+------------------
+2nd May 2025
+---------------
+
+124  cd git-push-demo/
+  125  ls -l
+  126  git log
+  127  git log --oneline
+  128  pwd
+  129  ls -la
+  130  cd ..
+  131  ls -l
+  132  mkdir test2
+  133  cd test2
+  134  git version
+  135  ls -la
+  136  git status
+  137  pwd
+  138  vi sample1.java
+  139  cat sample1.java 
+  140  git status
+  141  cd ..
+  142  cd test1
+  143  ls -la
+  144  vi sample.java
+  145  cat sample.java 
+  146  git status
+  147  clear
+  148  git add sample.java
+  149  ls -l
+  150  git status
+  151  git log
+  152  git commit -m "1st-commit"
+  153  git log
+  154  git config --global user.name "Raushan Kumar"
+  155  git config --global user.email "raushan8586.kumar@gmail.com"
+  156  vi sample1.java
+  157  cat sample1.java 
+  158  git status
+  159  git add .
+  160  git commit -m "2nd-commit"
+  161  git log
+  162  git remote -v
+  163  cd ..
+  164  cd git-push-demo/
+  165  git remote -v
+  166  cd ..
+  167  ls -l
+  168  cd test1/
+  169  ls -l
+  170  git remote -v
+  171  git remote add origin https://github.com/raushan8586/may-2025-devops.git
+  172  git remote -v
+  173  git push https://github.com/raushan8586/may-2025-devops.git master
+  174  git push origin master
+  175  git branch branch1 master
+  176  git branch
+  177  git log --oneline
+  178  git checkout branch1
+  179  git log --oneline
