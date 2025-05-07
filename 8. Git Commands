@@ -1194,3 +1194,66 @@ root@ip-172-31-10-248:~/git-push-demo# history
   299  ls -l
   300  git status
   301  git log --oneline
+
+303  ls -l
+  304  git log --oneline
+  305  vi file8.java
+  306  git add file8.java 
+  307  git commit -m "file8.java added"
+  308  git log --oneline
+  309  ls -l
+  310  git ls-files
+  311  git revert cf9ef2b
+  312  git log --oneline
+  313  ls -l
+  314  git ls-files
+  315  git log --oneline
+  316  git show cf9ef2b
+  317  git show 94c8e30
+  318  history
+  319  git branch
+  320  git log --oneline
+  321  git reset --hard 2dfa69e
+  322  git log --oneline
+  323  git status
+  324  ls -l
+  325  vi sample.java
+  326  git add .
+  327  git commit -m "sample.java added"
+  328  git log --oneline
+  329  git reset --soft 2dfa69e
+  330  git log --oneline
+  331  git status
+  332  git commit -m "sample.java committed again"
+  333  git status
+  334  history
+  335  ls -l
+  336  git status
+  337  git log --oneline
+  338  vi sample1.java
+  339  git add .
+  340  git commit -m "sample1.java added"
+  341  git log --oneline
+  342  vi sample.java
+  343  vi sample1.java
+  344  git status
+  345  cat sample.java 
+  346  cat sample1.java 
+  347  git status
+  348  git stash list
+  349  git stash --> move unstaged chnages to a temp shell
+  350  git status
+  351  git stash list --> list all the stash IDs
+  352  git stash pop stash@{0} --> unstash and delete the stash ID from temp shell
+  353  git status
+  354  git stash list
+  355  history
+  356  ls -l
+  357  git stash
+  358  git status
+  359  git stash list
+  360  git stash pop stash@{0}
+  361  git log --oneline
+  362  git stash
+  363  git stash list
+  364  git show stash@{0}
