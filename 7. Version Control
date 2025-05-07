@@ -26,4 +26,8 @@ git status --> To confirm SA or LR. untracked files --> WD, changes to committed
 
 SA (Staging Area) is a temporary Location
 
+rm --> deletes from WD --> git restore <file-name> in WD
+git rm --> deletes from WD + LR --> git restore --staged <file-name> in LR
+revert --> undo a commit
+
 
