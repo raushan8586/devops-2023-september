@@ -1072,3 +1072,125 @@ root@ip-172-31-10-248:~/git-push-demo# history
   177  git log --oneline
   178  git checkout branch1
   179  git log --oneline
+
+181  history
+  182  cd ..
+  183  ls -l
+  184  cd test1
+  185  ls -l
+  186  git branch
+  187  git push origin branch1
+  188  cd ..
+  189  ls -l
+  190  mkdir test3
+  191  cd test3
+  192  ls -l
+  193  ls -la
+  194  git init
+  195  git branch main master
+  196  cd ..
+  197  cd test1
+  198  ls -l
+  199  git branch
+  200  git branch main master
+  201  git branch
+  202  apt update -y
+  203  apt install apache2 -y
+  204  lsof -i -P -n | grep LISTEN
+  205  cd /var/www/html
+  206  ls -l
+  207  vi homepage.html
+  208  cat homepage.html 
+  209  ls -l
+  210  cd git-push-demo/
+  211  pwd
+  212  ls -la
+  213  git status
+  214  ls -l
+  215  cat file6.java 
+  216  git add file6.java 
+  217  git status
+  218  git commit -m "file6.java committed"
+  219  ls -l
+  220  git branch
+  221  git status
+  222  git log --oneline
+  223  git log
+  224  git log --oneline
+  225  git show 88c3768
+  226  git branch
+  227  git status
+  228  git remote -v
+  229  git push origin branch1
+  230  git log --oneline
+  231  git branch
+  232  git checkout master
+  233  git branch
+  234  git status
+  235  ls -l
+  236  git branch
+  237  git log --oneline
+  238  git branch branch2 master
+  239  git branch
+  240  git checkout branch2
+  241  git log --oneline
+  242  git push origin branch2
+  243  ls -l
+  244  vi app1.log
+  245  ls -l
+  246  vi readme1st
+  247  ls -l
+  248  git status
+  249  vi file7.java
+  250  git status
+  251  vi .gitignore
+  252  git status
+  253  ls -l
+  254  ls -la
+  255  git status
+  256  git add .
+  257  git commit -m "file7-gitignore-added"
+  258  git status
+  259  ls -l
+  260  vi app1.log
+  261  git status
+  262  ls -l
+  263  git push origin branch2
+  264  git status
+  265  ls -la
+  266  ls -l
+  267  rm file7.java
+  268  ls -l
+  269  git status
+  270  git restore file7.java
+  271  git status
+  272  ls -l
+  273  cd ..
+  274  ls -l
+  275  cd test1
+  276  ls -la
+  277  cd ..
+  278  cd test2
+  279  ls -la
+  280  rm sample1.java
+  281  cd ..
+  282  cd git-push-demo/
+  283  git log --oneline
+  284  git branch
+  285  ls -l
+  286  cd git-push-demo/
+  287  ls -l
+  288  ls -la
+  289  cat .gitignore
+  290  git rm file7.java
+  291  ls -l
+  292  git ls-files
+  293  git status
+  294  git restore --staged file7.java
+  295  git ls-files
+  296  ls -l
+  297  git status
+  298  git restore file7.java 
+  299  ls -l
+  300  git status
+  301  git log --oneline
