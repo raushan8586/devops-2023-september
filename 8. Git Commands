@@ -1257,3 +1257,128 @@ root@ip-172-31-10-248:~/git-push-demo# history
   362  git stash
   363  git stash list
   364  git show stash@{0}
+
+366  git stash list
+  367  ls -l
+  368  vi sample.java
+  369  git add .
+  370  git commit -m "sample.java completed"
+  371  git stash pop stash@{0}
+  372  vi sample.java
+  373  git status
+  374  git add sample.java
+  375  git status
+  376  cd git-push-demo/
+  377  ls -l
+  378  git status
+  379  git restore --staged .
+  380  git status
+  381  git stash list
+  382  git stash clear
+  383  git stash list
+  384  git status
+  385  git stash -p
+  386  git status
+  387  git stash list
+  388  git stash clear
+  389  git status
+  390  git restore sample1.java
+  391  git status
+  392  ls -l
+  393  vi file1
+  394  Z
+  395  git status
+  396  git restore file1
+  397  git status
+  398  git branch
+  399  git log --oneline
+  400  git checkout master
+  401  git pull origin master
+  402  git checkout -b branch3 master
+  403  git branch
+  404  git checkout master
+  405  git pull origin master
+  406  ls -l
+  407  git checkout branch3
+  408  git rebase master
+  409  ls -l
+  410  vi test.properties 
+  411  git status
+  412  ls -l
+  413  git restore test.properties 
+  414  git branch
+  415  git checkout master
+  416  git status
+  417  vi .gitignore
+  418  git status
+  419  git add .
+  420  git commit -m "gitignore-added"
+  421  git push origin master
+  422  git pull origin master
+  423  git config pull.rebase true
+  424  git pull origin master
+  425  git status
+  426  git push origin master
+  427  git status
+  428  git checkout branch3
+  429  git rebase master
+  430  ls -l
+  431  ls -la
+  432  git push origin branch3
+  433  ls -l
+  434  vi test.properties 
+  435  cat test.properties 
+  436  git status
+  437  git checkout master
+  438  git pull origin master
+  439  git branch
+  440  git checkout branch3
+  441  ls -
+  442  ls -l
+  443  git status
+  444  git stash
+  445  git status
+  446  git checkout master
+  447  git pull origin master
+  448  git checkout branch3
+  449  git rebase master
+  450  cat test.properties 
+  451  git stash list
+  452  git stash pop stash@{0}
+  453  vi test.properties 
+  454  git status
+  455  git add test.properties 
+  456  git status
+  457  git commit -m "test-properties-modified"
+  458  git log --graph --pretty=oneline
+  459  git branch
+  460  git checkout master
+  461  git pull origin master
+  462  git checkout branch3
+  463  git rebase master
+  464  ls -l
+  465  vi test.properties 
+  466  git status
+  467  git add .
+  468  git commit -m "test-prop-file-updated-dev3"
+  469  git log --graph --pretty=oneline
+  470  git status
+  471  git checkout master
+  472  git pull origin master
+  473  git checkout branch3
+  474  git rebase master
+  475  vi test.properties 
+  476  git status
+  477  git add test.properties 
+  478  git status
+  479  git commit -m "test-prop-file-conflict-resolved"
+  480  git status
+  481  git rebase --continue
+  482  git status
+  483  git log --graph --pretty=oneline
+  484  git branch
+  485  git status
+  486  cat test.properties 
+  487  git log --oneline
+  488  git checkout master
+  489  git log --oneline
