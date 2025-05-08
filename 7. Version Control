@@ -32,11 +32,12 @@ revert --> undo a commit
 
 git stash --> move unstaged changes to the temp shell
 
-
-Remote master --> Local Master : git pull
-Local Master --> Local branch (b1) : git rebase
-make changes to Local branch (b1) : git add, git commit
-Local branch (b1) --> Remote branch : git push
-Remote branch (b1) --> Remote master : PR --> GitHub
+when we start our day:
+1. Remote master --> Local Master : git checkout master, git pull origin master
+2. Local Master --> Local branch (b1) : git checkout b1, git rebase master
+3. make changes to Local branch (b1) : git add, git commit
+repeat step 1 & 2
+4. Local branch (b1) --> Remote branch (b1) : git push origin b1
+5. Remote branch (b1) --> Remote master : PR --> GitHub
 
 
