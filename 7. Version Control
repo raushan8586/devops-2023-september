@@ -36,7 +36,7 @@ when we start our day:
 1. Remote master --> Local Master : git checkout master, git pull origin master
 2. Local Master --> Local branch (b1) : git checkout b1, git rebase master
 3. make changes to Local branch (b1) : git add, git commit
-repeat step 1 & 2
+repeat step 1 & 2 when you are ready with your changes
 4. Local branch (b1) --> Remote branch (b1) : git push origin b1
 5. Remote branch (b1) --> Remote master : PR --> GitHub
 
