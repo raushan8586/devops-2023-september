@@ -1,3 +1,27 @@
+git clone
+git init
+git add
+git commit
+git push
+git pull
+git rebase master / git merge src destination
+git status
+git log
+git branch
+git checkout
+git restore
+git rm
+git ls-files
+git revert
+git reset
+git stash
+git stash pop
+git stash clear
+git log --graph --pretty=oneline
+git merge
+Pull request
+
+
 1  git --version
     2  ls -l
     3  mkdir project1
