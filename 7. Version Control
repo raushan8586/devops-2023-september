@@ -33,3 +33,10 @@ revert --> undo a commit
 git stash --> move unstaged changes to the temp shell
 
 
+Remote master --> Local Master : git pull
+Local Master --> Local branch (b1) : git rebase
+make changes to Local branch (b1) : git add, git commit
+Local branch (b1) --> Remote branch : git push
+Remote branch (b1) --> Remote master : PR --> GitHub
+
+
