@@ -7,6 +7,10 @@ sudo su -
     4  docker version
     5  docker info
 
+Install apache2 in a VM
+lsof -i -P -n | grep LISTEN --> check running in a VM
+apt install apache2 -y --> Install apache2 (web server)
+
 add default user - ubuntu in docker group
 
 https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
