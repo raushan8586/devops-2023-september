@@ -87,3 +87,16 @@ kubectl get rs
    43  kubectl get pods
    44  kubectl get pods -o wide
    45  kubectl get nodes
+
+-------------------------------------------------------
+18th May 2025
+-----------------------
+23  eksctl create cluster --name=eksdemo1
+   25  kubectl get nodes
+   26  kubectl get pods
+   37  cat nginx-pod.yaml 
+   38  kubectl apply -f nginx-pod.yaml 
+   39  kubectl get pods
+   40  kubectl delete -f nginx-pod.yaml 
+   41  kubectl get pods
+   42  eksctl delete cluster eksdemo1
