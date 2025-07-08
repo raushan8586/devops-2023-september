@@ -7,7 +7,7 @@ Terraform AWS Documentation
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 Download
-https://www.terraform.io/downloads
+https://developer.hashicorp.com/terraform/install
 
 AWS CLI
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
