@@ -1,0 +1,15 @@
+---
+- hosts: host1
+  become: yes
+  name: Play 1
+  tasks:
+     - name: Execute command ‘Date’
+       command: date
+     - name: Install httpd
+       apt: name=apache2 state=latest
+- hosts: host2
+  name: Play 2
+  become: yes
+  tasks:
+     - name: Install nginx
+       apt: name=nginx state=latest

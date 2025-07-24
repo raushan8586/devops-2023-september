@@ -1,0 +1,64 @@
+//aws provider
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.81.0"
+    }
+  }
+}
+
+//provider block
+
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "**"
+  secret_key = "**"
+}
+
+//create VPC
+resource "aws_vpc" "intellipaat-vpc" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "intellipaat-vpc"
+  }
+}
+
+//create subnet1
+resource "aws_subnet" "private-subnet" {
+  vpc_id     = aws_vpc.intellipaat-vpc.id
+  cidr_block = "10.0.1.0/24"
+
+  tags = {
+    Name = "private-subnet"
+  }
+}
+
+//create subnet2
+resource "aws_subnet" "public-subnet" {
+  vpc_id     = aws_vpc.intellipaat-vpc.id
+  cidr_block = "10.0.2.0/24"
+  map_public_ip_on_launch = true
+  availability_zone = "ap-south-1a"
+
+  tags = {
+    Name = "public-subnet"
+  }
+}
+
+//create ec2 instance
+resource "aws_instance" "my-server" {
+  ami           = "ami-0fd05997b4dff7aac"
+  instance_type = "t2.micro"
+  key_name = "nov-devops-2024"
+  availability_zone = "ap-south-1a"
+  
+  tags = {
+    Name = "my-server"
+  }
+}
+
+

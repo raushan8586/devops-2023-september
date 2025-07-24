@@ -1,0 +1,41 @@
+Link: https://www.jenkins.io/doc/book/installing/linux/
+
+
+
+
+
+
+Commands:
+1  apt update -y
+    2  clear
+    3  apt install fontconfig openjdk-17-jre -y
+    4  java -version
+    5  clear
+    6  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    7  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    8  apt-get update -y
+    9  apt-get install jenkins -y
+
+
+GitScm Polling
+
+http://35.154.148.24:8080/github-webhook/
+
+
+Add a slave node agent:
+----------------------------
+1. Create a VM
+2. Manage Jenkins --> Security --> Agents -- select random
+3. open ports in Security Group --> ALL TCP
+4. Manage Jenkins --> Nodes and Clouds --> Add New Node
+--> home directory --> /home/ubuntu
+5. Run commands:
+apt update -y
+    2  apt install fontconfig openjdk-17-jre -y
+    3  clear
+    4  ls -l
+    5  curl -sO http://35.154.148.24:8080/jnlpJars/agent.jar
+    6  ls -l
+    7  java -jar agent.jar -jnlpUrl http://35.154.148.24:8080/computer/server1/jenkins-agent.jnlp -secret 7dcafa9df166964c181664d16f33eda66b38075219fee1048de8d65d92b3cb49 -workDir "/home/ubuntu"
+    8  history
+

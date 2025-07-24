@@ -1,0 +1,41 @@
+Applications installed on VM
+ALB --> Target Groups --> /app1-->TG1 --> 10 EC2 instances --> app1
+ALB --> Target Groups --> /app2 --> TG2 --> 5 EC2 instances --> app2
+------------------------------------------------------------------------
+
+
+Applications runnig on Pods (containerized applications)
+
+Ingress
+
+LB
+
+dns --> LB
+
+Micro-services1 --> Container1 --> LB1
+Micro-services2 --> Container2 --> LB2
+Micro-services3 --> Container3 --> LB3
+
+Not recommended
+
+Ingress --> path/url based  routing
+
+1. Ingress Controller --> Deploy this in the cluster to read the Ingress resource and its rules
+--> nginx Ingress controller, AWS ALB, Traefik, HA Proxy
+
+2. Ingress Resource--> Rules to re-direct the request to the services
+
+abc1234.com/path1 --> service1 --> Micro-services1 --> Pod1
+abc1234.com/path2 --> service2 --> Micro-services2 --> Pod2
+
+1. Install Nginx Controller, which creates the LB as well
+2. Deploy ms1 with svc1
+3. Deploy Ingress Resources (Path/URL) --> rules
+
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+
+
+API Gateway
+Load Balancer
+Ingress --> Ingress Controller + Ingress Resource

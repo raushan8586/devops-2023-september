@@ -1,0 +1,64 @@
+1. Elasticsearch:
+ubuntu@ip-172-31-13-232:~/elasticsearch-8.10.4/bin$ history
+    1  sudo apt update -y
+    2  clear
+    3  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.10.4-linux-x86_64.tar.gz
+    4  ls -l
+    5  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.10.4-linux-x86_64.tar.gz.sha512
+    6  ls -l
+    7  shasum -a 512 -c elasticsearch-8.10.4-linux-x86_64.tar.gz.sha512
+    8  tar -xzf elasticsearch-8.10.4-linux-x86_64.tar.gz
+    9  ls -l
+   10  cd elasticsearch-8.10.4/
+   11  ls -l
+   12  cd bin
+   13  ls -l
+   14  ./elasticsearch
+   15  history
+
+Note: save the 'elastic' user password and the enrollment token
+
+
+2. Kibana:
+ubuntu@ip-172-31-13-232:~/kibana-8.10.4/bin$ history
+    1  ls -l
+    2  curl -O https://artifacts.elastic.co/downloads/kibana/kibana-8.10.4-linux-x86_64.tar.gz
+    3  ls -l
+    4  curl https://artifacts.elastic.co/downloads/kibana/kibana-8.10.4-linux-x86_64.tar.gz.sha512 | shasum -a 512 -c -
+    5  tar -xzf kibana-8.10.4-linux-x86_64.tar.gz
+    6  ls -l
+    7  cd kibana-8.10.4/
+    8  ls -l
+    9  cd config
+   10  ls -l
+   11  vi kibana.yml   --> check below what needs to be edited
+   12  cd ../bin
+   13  ls -l
+   14  ./kibana
+   15  history
+
+Edit kibana.yml and change/uncomment hostname with Private IP --> server.host: "172.31.13.232"
+use the public IP in the browser though
+
+Note: Refresh the page. Don't wait long.
+
+3. Elastic Agent -->
+Login to Kibana --> add integrations --> search for Elastic Agent --> --> create api, which acts as credentials --> Download elastic-agent.yml 
+
+
+ubuntu@ip-172-31-13-232:~/elastic-agent-8.10.4-linux-x86_64$ history
+    1  sudo curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.10.4-linux-x86_64.tar.gz
+    2  tar xzvf elastic-agent-8.10.4-linux-x86_64.tar.gz
+    3  ls -l
+    4  cd elastic-agent-8.10.4-linux-x86_64/
+    5  ls -l
+    7  mv elastic-agent.yml elastic-agent.yml_BkUp
+    8  ls -l
+    9  vi elastic-agent.yml
+   12  more elastic-agent.yml
+   13  ls -l
+   14  sudo ./elastic-agent install
+   15  history
+
+
+Explore Kibana --> Discover, Dashboard, Infrastructure, Logs, Metrics

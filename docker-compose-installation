@@ -1,0 +1,10 @@
+  146  docker-compose version
+  147  wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+  148  ls -l
+  149  chmod +x docker-compose-linux-x86_64
+  150  sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+  151  docker-compose version
+
+
+    Latest docker-compose :
+    https://github.com/docker/compose/releases/

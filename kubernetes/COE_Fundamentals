@@ -1,0 +1,26 @@
+Container Engines (CE) --> Docker, Rocket, Podman, Containerd
+
+Container Orchestration Engine (COE) --> Kubernetes (k8s)
+
+why?
+auto-scaling
+auto-loadbalancing
+auto-deployment
+auto-healing
+auto-scheduling, auto-clustering
+
+
+Kubernetes Objects:
+1. Pods --> container
+2. ReplicaSet --> To maintain a stable number of replica pods --> auto-healing
+3. Deployment --> deploys replica of pods without downtime
+4. services --> to expose the pods (front-end, back-end)
+  NodePort --> to expose front-end pods (very much similar to port mapping concept in Docker)
+  LoadBalancer --> to loadbalance the traffic across multiple nodes. LB uses NodePort
+  ClusterIP --> front-end and back-end pods communication
+
+Kubernetes Cloud Managed services:
+AWS --> EKS
+Azure --> AKS
+GCP --> GKE
+

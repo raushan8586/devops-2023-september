@@ -1,0 +1,94 @@
+EC2 - t2.medium
+
+Prometheus:
+
+root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
+    1  apt update -y
+    2  clear
+    3  sudo groupadd --system prometheus
+    4  sudo useradd -s /sbin/nologin --system -g prometheus prometheus
+    5  sudo mkdir /etc/prometheus
+    6  sudo mkdir /var/lib/prometheus
+    7  wget https://github.com/prometheus/prometheus/releases/download/v2.45.1/prometheus-2.45.1.linux-amd64.tar.gz
+    8  ls -l
+    9  tar xvf prometheus-2.45.1.linux-amd64.tar.gz
+   10  ls -l
+   11  cd prometheus-2.45.1.linux-amd64/
+   12  ls -l
+   13  sudo mv prometheus /usr/local/bin
+   14  ls -l
+   15  sudo mv promtool /usr/local/bin
+   16  sudo chown prometheus:prometheus /usr/local/bin/prometheus
+   17  sudo chown prometheus:prometheus /usr/local/bin/promtool
+   18  ls -l
+   19  sudo mv consoles /etc/prometheus
+   20  sudo mv console_libraries /etc/prometheus
+   21  ls -l
+   22  sudo mv prometheus.yml /etc/prometheus
+   23  sudo chown prometheus:prometheus /etc/prometheus
+   24  sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+   25  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+   26  sudo chown -R prometheus:prometheus /var/lib/prometheus
+   27  vi /etc/prometheus/prometheus.yml
+   28  vi /etc/systemd/system/prometheus.service --> check bottom of the file for the content
+   29  sudo systemctl daemon-reload
+   30  sudo systemctl enable prometheus
+   31  sudo systemctl start prometheus
+   32  sudo systemctl status prometheus
+   33  lsof -i -P -n | grep LISTEN
+   34  sudo ufw allow 9090/tcp
+
+
+Node-Exporter:
+40  cd ..
+   41  ls -l
+   42  wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+   43  ls -l
+   44  tar xvzf node_exporter-1.6.1.linux-amd64.tar.gz
+   45  ls -l
+   46  cd node_exporter-1.6.1.linux-amd64/
+   47  ls -l
+   48  nohup ./node_exporter &
+   49  lsof -i -P -n | grep LISTEN
+   50  cd /etc/prometheus/
+   51  ls -l
+   52  vi prometheus.yml
+   53  cat prometheus.yml
+   54  vi prometheus.yml
+   55  sudo systemctl daemon-reload
+   56  sudo systemctl restart prometheus
+   57  sudo systemctl status prometheus
+   58  history
+
+
+Grafana:
+62  wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+   63  sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+   64  apt update -y
+   65  apt install grafana
+   66  systemctl status grafana-server
+   67  systemctl start grafana-server
+   68  systemctl status grafana-server
+   69  lsof -i -P -n | grep LISTEN
+   70  history
+
+
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+
+

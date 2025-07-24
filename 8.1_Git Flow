@@ -1,0 +1,27 @@
+1. Remote Master - gold copy of the application code
+2. Branched out of master - b1
+3. make changes to b1 with commits
+4. Push b1 commits to github b1
+5. b1 making pull request to merge to Remote master
+6. master reviewing/approving pull request. Master Github to be updated with b1 commits
+
+Next day b1 staritng the work
+Goal --> b1 should have latest code from github master
+1. checkout to master - git pull origin master --> Master LR will be updated
+2. checkout to b1
+3. git rebase to update the b1 local with the latest code (git rebase master)
+
+git checkout master
+   68  git remote -v
+   69  git pull origin master
+   70  git branch
+   71  git log --oneline
+   72  git branch b2 master
+   73  git branch
+   74  git pull origin master
+   75  git log --oneline
+   76  git checkout b2
+   77  git log --oneline
+   78  git rebase master
+   79  git log --oneline
+

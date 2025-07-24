@@ -1,0 +1,65 @@
+Walkthrough the Deployment architecture worked recently
+--------------------------------------------------------
+
+
+1. GIT --> Make your OWN notes with STANDARD definitions
+  https://www.interviewbit.com/git-interview-questions/
+  https://intellipaat.com/blog/interview-question/git-interview-questions-answers/
+
+
+2. Microservices --> Monolithic Vs Microservices
+
+3. Containerization --> Docker Architecture, Docker Commands
+  https://www.interviewbit.com/docker-interview-questions/
+  https://intellipaat.com/blog/interview-question/docker-interview-questions-answers/
+
+4. Kubernetes
+  https://www.interviewbit.com/kubernetes-interview-questions/
+  https://intellipaat.com/blog/interview-question/kubernetes-interview-questions-answers/
+
+  --> Kubernetes Ingress. How is it different from LoadBalancer? API Gateway/LoadBalancer/Kubernetes Ingress
+
+Learn helm chart --> https://helm.sh/
+
+5. Terraform
+  https://www.interviewbit.com/terraform-interview-questions/
+  https://intellipaat.com/blog/interview-question/terraform-interview-questions/#4
+
+provider, resource, modules, provisioner, provider Vs provisioner
+
+
+6. Ansible
+  https://www.interviewbit.com/ansible-interview-questions/
+  https://intellipaat.com/blog/interview-question/ansible-interview-questions/
+
+7. Jenkins
+  https://www.interviewbit.com/jenkins-interview-questions/
+  https://intellipaat.com/blog/interview-question/jenkins-interview-questions-answers/
+  
+--> jenkinsfile --> Have few examples
+
+GitHub Actions:
+  https://www.youtube.com/watch?v=ylEy4eLdhFs
+  https://www.youtube.com/watch?v=R8_veQiYBjI
+
+GitOps --> Continuous Deployment --> argoCD --> https://argo-cd.readthedocs.io/en/stable/
+
+https://www.youtube.com/watch?v=MeU5_k9ssrs
+
+
+8. Monitoring:
+  --> setup
+
+9. Database
+  Relational DB --> MySQL
+  Non-Relational DB --> MongoDB --> https://www.mongodb.com/resources/products/fundamentals/basics
+
+10. Applications Servers (Deployment)
+(MUST)  Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
+
+  weblogic --> Experienced Professionals
+
+
+6+ yrs -->
+Python Scripting
+Shell-Scripting

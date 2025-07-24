@@ -1,0 +1,8 @@
+c99 --> D1 (b1) --> test file --> gitHub b1 --> pull request --> gitHub master --> test file --> latest commit (c100)
+C99 --> D3 (b3) --> test file --> gitHub b3 --> pull request --> D3 got to know that the PR is not on top of the latest commit
+
+
+
+git pull origin master
+git rebase master
+git commit --> git push --> pull request
